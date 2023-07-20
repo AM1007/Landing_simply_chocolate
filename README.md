@@ -1,5 +1,3 @@
 # Landing_simply_chocolate
 
-Simple Landing page simple for chocolate :smile
-
-[Design Layout]()
+Simple Landing page simply for chocolate :chocolate_bar:
