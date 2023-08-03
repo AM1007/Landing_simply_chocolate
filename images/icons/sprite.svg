@@ -1,13 +1,13 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-arrow-right" viewBox="0 0 45 32">
+<path d="M27.104 4.896c-0.424-0.455-0.655-1.057-0.644-1.678s0.263-1.215 0.703-1.655 1.033-0.692 1.655-0.703c0.622-0.011 1.224 0.22 1.678 0.644l12.8 12.8c0.45 0.45 0.702 1.060 0.702 1.696s-0.252 1.246-0.702 1.696l-12.8 12.8c-0.22 0.236-0.485 0.425-0.779 0.556s-0.612 0.202-0.934 0.207c-0.322 0.006-0.642-0.054-0.941-0.174s-0.57-0.3-0.798-0.528c-0.228-0.228-0.408-0.499-0.528-0.798s-0.18-0.619-0.174-0.941c0.006-0.322 0.076-0.64 0.207-0.934s0.32-0.559 0.556-0.779l8.704-8.704h-31.008c-0.636 0-1.247-0.253-1.697-0.703s-0.703-1.061-0.703-1.697c0-0.636 0.253-1.247 0.703-1.697s1.061-0.703 1.697-0.703h31.008l-8.704-8.704z"></path>
+</symbol>
 <symbol id="icon-ellipse" viewBox="0 0 32 32">
 <path fill="#4c4c4c" style="fill: var(--color1, #4c4c4c); stroke: var(--color2, #eceded)" stroke="#eceded" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14s-14-6.268-14-14c0-7.732 6.268-14 14-14s14 6.268 14 14z"></path>
 </symbol>
-<symbol id="icon-arrow-circle" viewBox="0 0 32 32">
-<path fill="none" stroke="#fd9222" style="stroke: var(--color1, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M9.143 16h13.715M22.857 16l-3.431-3.428M22.857 16l-3.429 3.428M16 30.857c8.205 0 14.857-6.652 14.857-14.857s-6.652-14.857-14.857-14.857c-8.205 0-14.857 6.652-14.857 14.857s6.652 14.857 14.857 14.857z"></path>
-</symbol>
 <symbol id="icon-cross" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16M8 8l16 16"></path>
+<path d="M32 3.224l-3.224-3.224-12.776 12.776-12.776-12.776-3.224 3.224 12.776 12.776-12.776 12.776 3.224 3.224 12.776-12.776 12.776 12.776 3.224-3.224-12.776-12.776 12.776-12.776z"></path>
 </symbol>
 <symbol id="icon-user" viewBox="0 0 32 32">
 <path fill="none" stroke="#fd9222" style="stroke: var(--color1, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 28v-2.667c0-2.946-2.388-5.333-5.333-5.333v0h-10.667c-2.946 0-5.333 2.388-5.333 5.333v0 2.667M16 14.667c2.946 0 5.333-2.388 5.333-5.333s-2.388-5.333-5.333-5.333v0c-2.946 0-5.333 2.388-5.333 5.333s2.388 5.333 5.333 5.333v0z"></path>

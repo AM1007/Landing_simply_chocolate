@@ -1,6 +1,7 @@
 :root {
   --black: #111111;
   --white: #ffffff;
+  --milk: #fafafa;
   --orange: #fd9222;
   --grey: rgba(17, 17, 17, 0.1);
   --orange-light: rgba(253, 146, 34, 0.1);
@@ -413,12 +414,112 @@ body {
 }
 
 .ingredients__list-item {
+  position: relative;
+
   width: 258px;
   height: 270px;
   padding: 28px 32px;
 
   border-radius: 15px;
 }
+
+/* Card button orange */
+
+.ingredients__item-button {
+  position: absolute;
+  top: 14px;
+  left: 220px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--milk);
+}
+
+.ingredients__item-icon {
+  fill: var(--milk);
+}
+
+.ingredients__item-button:hover .ingredients__item-icon,
+.ingredients__item-button:focus .ingredients__item-icon {
+  fill: var(--orange);
+}
+
+.ingredients__item-button:hover,
+.ingredients__item-button:focus {
+  border: 1px solid var(--milk);
+  background-color: var(--milk);
+}
+
+/* Card button milk */
+
+.ingredients__item-button-milk {
+  position: absolute;
+  top: 14px;
+  left: 220px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--orange);
+}
+
+.ingredients__item-icon-milk {
+  fill: var(--orange);
+}
+
+.ingredients__item-button-milk:hover .ingredients__item-icon-milk,
+.ingredients__item-button-milk:focus .ingredients__item-icon-milk {
+  fill: var(--milk);
+}
+
+.ingredients__item-button-milk:hover,
+.ingredients__item-button-milk:focus {
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+}
+
+/* Card button dark */
+
+.ingredients__item-button-dark {
+  position: absolute;
+  top: 14px;
+  left: 220px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+.ingredients__item-icon-dark {
+  fill: var(--white);
+}
+
+.ingredients__item-button-dark:hover .ingredients__item-icon-dark,
+.ingredients__item-button-dark:focus .ingredients__item-icon-dark {
+  fill: var(--black);
+}
+
+.ingredients__item-button-dark:hover,
+.ingredients__item-button-dark:focus {
+  border: 1px solid var(--white);
+  background-color: var(--white);
+}
+
+/* n-tn Card color */
 
 .ingredients__list-item:nth-child(2n) {
   background-color: var(--white);
@@ -534,7 +635,10 @@ body {
   border: 1px solid var(--grey);
 }
 
-.products__list-item {
+.products__list-item:hover,
+.products__list-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .products__list-img {
   margin-bottom: 8px;
@@ -599,6 +703,12 @@ body {
   border-bottom: 1px solid var(--grey);
   border-left: 1px solid var(--grey);
 }
+
+.sellers__list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .sellers__list-img {
   border-radius: 15px 15px 0 0;
 }
@@ -754,4 +864,77 @@ body {
   font-weight: 500;
   line-height: 1.14em;
   letter-spacing: -0.28px;
+}
+
+/* ===== Modal ===== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 146, 34, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  /* visibility: hidden; */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 408px;
+  min-height: 584px;
+
+  border-radius: 4px;
+  background: var(--milk);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button-close {
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button-close:hover,
+.modal__button-close:focus {
+  background-color: var(--orange);
+  border: none;
+  fill: var(--white);
+}
+
+.modal-button-close__icon {
+  fill: var(--black);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button-close:hover .modal-button-close__icon {
+  fill: var(--milk);
 }
