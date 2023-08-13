@@ -5,21 +5,70 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --black: #111111;
+  --white: #ffffff;
+  --milk: #fafafa;
+  --orange: #fd9222;
+  --grey: rgba(17, 17, 17, 0.1);
+  --orange-light: rgba(253, 146, 34, 0.1);
+  --dark: #1e1823;
+  --beigie: #fcf1e0;
+  --grey-light: #fafafa;
+  --grey-text: rgba(255, 255, 255, 0.7);
+  --grey-circle: rgba(255, 255, 255, 0.5);
+  --grey-name: rgba(17, 17, 17, 0.7);
+  --greyest: #4c4c4c;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+body {
+  font-family: Montserrat, sans-serif;
+  color: var(--black);
+  background-color: var(--grey-light);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.container {
+  padding: 0 16px;
+  width: 1168px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-headline {
+  max-width: 412px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.section-headline__span {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

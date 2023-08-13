@@ -1,21 +1,120 @@
-.header {
-  padding: 20px 0;
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.nav-list {
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__logo-icon {
+  margin-left: 4px;
+}
+
+.header-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 898px;
 }
 
-.nav-link {
+.header-logo__wrap {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.header-logo__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11em;
+  letter-spacing: -0.54px;
+  color: var(--black);
+
+  text-transform: uppercase;
+}
+
+/* Header menu */
+
+.header-logo__link-span {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.11em;
+  letter-spacing: -0.54px;
+  color: var(--black);
+
+  text-transform: uppercase;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-nav__item {
+}
+
+.header-nav__link {
+  display: block;
+  /* padding: 32px 0; */
+
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  line-height: 1.14em;
+  letter-spacing: -0.28px;
+  color: var(--black);
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-nav__link:hover,
+.header-nav__link:focus {
+  color: var(--orange);
+}
+
+/* Header Adress */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-adrress {
+}
+
+.header-adrress__list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header-adrress__list-item {
+}
+
+.header-adrress__link {
+  display: flex;
+  align-items: flex-start;
+
+  padding: 8px;
+
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--grey);
+}
+
+.header-adrress__link:hover,
+.header-adrress__link:focus {
+  border: 1px solid var(--orange-light);
+}
+
+.header-adrress__link:hover .header-adrress__icon,
+.header-adrress__link:focus .header-adrress__icon {
+  border: 1px solid var(--orange-light);
+  fill: var(--orange);
+}
+
+.header-adrress__icon {
+  fill: var(--black);
 }

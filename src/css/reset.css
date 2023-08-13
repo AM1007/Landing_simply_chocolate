@@ -33,3 +33,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
