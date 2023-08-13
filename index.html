@@ -2,78 +2,105 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Landing_simply_chocolate/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Landing_simply_chocolate/assets/favicon-f8003262.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta name="description" content="" />
+    <title>Simply Chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
     
-    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-a3442c7e.js"></script>
-    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-ad2e2377.css">
+    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-bed13538.css">
   </head>
+
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section class="container">
-      <h1 class="dev">Dev Titans</h1>
-      <!-- Path to images as from index.html file -->
-      <img class="titans" src="/Landing_simply_chocolate/assets/111-91d274b8.jpg" alt="" width="300" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+    <header class="page-header">
+  <div class="container page-header-container">
+    <nav class="header-nav">
+      <div class="header-logo__wrap">
+        <a href="/index.html" class="header-logo__link link">
+          <span class="header-logo__link-span">simply</span>&nbsp; chocolate
+          <svg
+            class="header-nav__logo-icon"
+            width="24"
+            height="24"
+            aria-label="Simply chocolate logotype"
           >
+            <use href="../img/sprite.svg#icon-chocolate"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- Header menu -->
+
+      <ul class="header-nav__list list">
+        <li class="header-nav__item">
+          <a href="./index.html" class="header-nav__link link">Home</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+        <li class="header-nav__item">
+          <a href="#how-made" class="header-nav__link link">How it's made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#reviews" class="header-nav__link link"
+            >Chocolate is loved</a
           >
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img class="pic" src="/Landing_simply_chocolate/assets/vite-logo-51249ca9.png" alt="Vite logo" width="300" />
-    </div>
+    <!-- Socials -->
+
+    <ul class="header-adrress__list list">
+      <li class="header-adrress__list-item link">
+        <a
+          href="https://facebook.com"
+          class="header-adrress__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="facebook icon"
+        >
+          <svg class="header-adrress__icon" width="24" height="24">
+            <use href="../img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-adrress__list-item link">
+        <a
+          href="https://instagram.com"
+          class="header-adrress__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="instagram icon"
+        >
+          <svg class="header-adrress__icon" width="24" height="24">
+            <use href="../img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="header-adrress__list-item link">
+        <a
+          href="https://twitter.com"
+          class="header-adrress__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="twitter icon"
+        >
+          <svg class="header-adrress__icon" width="24" height="24">
+            <use href="../img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
-</section>
+</header>
 
-
-    
   </body>
 </html>
