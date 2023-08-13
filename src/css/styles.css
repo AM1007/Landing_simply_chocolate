@@ -6,8 +6,13 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./hero.css');
 
 :root {
+  /* --primary-color: #111111;
+  --secondary-color: #ffffff;
+  --accent-color: #fd9222; */
+  --transition-dur-and-func: 250ms linear;
   --black: #111111;
   --white: #ffffff;
   --milk: #fafafa;
@@ -30,37 +35,54 @@ body {
 }
 
 .container {
-  padding: 0 16px;
   width: 1168px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.accent-color {
+  color: var(--accent-color);
 }
 
 .section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section-headline {
+/* .container {
+  padding: 0 16px;
+  width: 1168px;
+  margin: 0 auto;
+} */
+
+/* .section {
+  padding: 60px 0;
+} */
+
+/* .section-headline {
   max-width: 412px;
   margin: 0 auto 50px auto;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
-  line-height: 28px; /* 116.667% */
+  line-height: 28px; 
   letter-spacing: -0.72px;
   text-transform: uppercase;
   color: var(--black);
-}
+} */
 
-.section-headline__span {
+/* .section-headline__span {
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
   color: var(--orange);
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -71,4 +93,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
