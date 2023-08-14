@@ -18,6 +18,38 @@
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.sellers__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.sellers__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  color: #fafafa;
+  padding: 178px 40px;
+  border-radius: 15px 15px 0px 0px;
+  background-image: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0) 100%
+  );
+  backdrop-filter: blur(7.5px);
+  transform: translateY(100%);
+  transition: transform var(--transition-dur-and-func);
+}
+
+.sellers__list-item:hover .sellers__overlay {
+  transform: translateY(0%);
+}
+
 .sellers__list-img {
   border-radius: 15px 15px 0 0;
 }
