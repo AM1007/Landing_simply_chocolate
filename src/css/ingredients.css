@@ -38,10 +38,13 @@
   border-radius: 50%;
   background: transparent;
   border: 1px solid var(--milk);
+  transition: border var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .ingredients__item-icon {
   fill: var(--milk);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .ingredients__item-button:hover .ingredients__item-icon,
@@ -74,6 +77,7 @@
 
 .ingredients__item-icon-milk {
   fill: var(--orange);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .ingredients__item-button-milk:hover .ingredients__item-icon-milk,
@@ -102,10 +106,12 @@
   border-radius: 50%;
   background: transparent;
   border: 1px solid var(--white);
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .ingredients__item-icon-dark {
   fill: var(--white);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .ingredients__item-button-dark:hover .ingredients__item-icon-dark,

@@ -8,6 +8,7 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+  padding-bottom: 54px;
 }
 
 .footer__contacts::after {
@@ -16,7 +17,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  border-top: 1px solid green;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer__headline {
@@ -70,7 +71,10 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer__contacts-link {
+
+.footer__contacts-item:hover,
+.footer__contacts-item:focus {
+  border-color: var(--orange);
 }
 
 .footer-adrress__icon {
@@ -80,13 +84,9 @@
   justify-content: center;
 }
 
-.footer__contacts-img {
-}
-
-.footer__adrress-wrap {
-}
-
-.footer__address-list {
+.footer__contacts-item:hover .footer-adrress__icon,
+.footer__contacts-item:focus .footer-adrress__icon {
+  fill: var(--orange);
 }
 
 .footer__adrress-link {
@@ -102,16 +102,84 @@
 .footer__adress-item:not(:last-child) {
   margin-bottom: 4px;
 }
+
+.footer__nav-form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 24px;
+}
+
 .footer__nav-wraper {
 }
 .footer__nav {
 }
 .footer__nav-list {
+  display: flex;
+  gap: 24px;
 }
 .footer__nav-link {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14em;
   letter-spacing: -0.28px;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+  color: var(--orange);
+}
+
+.footer__email-form {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__email-input {
+  width: 313px;
+  height: 52px;
+  padding: 14px 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.footer__email-input:hover,
+.footer__email-input:focus {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.footer__email-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 137px;
+  height: 52px;
+  padding: 17px 40px;
+
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  border-radius: 100px;
+  background: var(--orange);
+}
+
+.footer__email-button:hover,
+.footer__email-button:focus {
+  color: var(--orange);
+  background: var(--white);
 }
