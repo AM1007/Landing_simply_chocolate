@@ -1,0 +1,34 @@
+.sellers-section {
+  padding-bottom: 120px;
+}
+.sellers__list {
+  display: flex;
+  gap: 16px;
+}
+.sellers__list-item {
+  background: var(--white);
+  border-radius: 15px;
+  border-right: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  border-left: 1px solid var(--grey);
+}
+
+.sellers__list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.sellers__list-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.sellers__item-headline {
+  padding: 28px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33em;
+  letter-spacing: -0.36px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+}

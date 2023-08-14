@@ -1,0 +1,49 @@
+.how-made-section {
+  padding-bottom: 120px;
+}
+.how-made__division-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.how-made__division {
+  border-radius: 15px;
+}
+
+.how-made__division-text {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 32px;
+}
+.how-made__division-img {
+}
+.how-made__headline {
+  margin-bottom: 28px;
+  max-width: 350px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33em;
+  color: var(--black);
+}
+.how-made__list-item {
+  display: flex;
+  align-items: first baseline;
+  gap: 8px;
+}
+
+.how-made__list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.how-made__icon {
+  min-width: 8px;
+  min-height: 8px;
+}
+
+.list-item__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28em;
+  letter-spacing: -0.28px;
+  color: var(--black);
+}

@@ -1,0 +1,162 @@
+.ingredients-section {
+  padding: 120px 0;
+}
+
+.ingredients__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 24px;
+}
+
+.ingredients__img {
+  margin-bottom: 36px;
+}
+
+.ingredients__list-item {
+  position: relative;
+
+  width: 258px;
+  height: 270px;
+  padding: 28px 32px;
+
+  border-radius: 15px;
+}
+
+/* Card button orange */
+
+.ingredients__item-button {
+  position: absolute;
+  top: 14px;
+  left: 220px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--milk);
+}
+
+.ingredients__item-icon {
+  fill: var(--milk);
+}
+
+.ingredients__item-button:hover .ingredients__item-icon,
+.ingredients__item-button:focus .ingredients__item-icon {
+  fill: var(--orange);
+}
+
+.ingredients__item-button:hover,
+.ingredients__item-button:focus {
+  border: 1px solid var(--milk);
+  background-color: var(--milk);
+}
+
+/* Card button milk */
+
+.ingredients__item-button-milk {
+  position: absolute;
+  top: 14px;
+  left: 220px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--orange);
+}
+
+.ingredients__item-icon-milk {
+  fill: var(--orange);
+}
+
+.ingredients__item-button-milk:hover .ingredients__item-icon-milk,
+.ingredients__item-button-milk:focus .ingredients__item-icon-milk {
+  fill: var(--milk);
+}
+
+.ingredients__item-button-milk:hover,
+.ingredients__item-button-milk:focus {
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+}
+
+/* Card button dark */
+
+.ingredients__item-button-dark {
+  position: absolute;
+  top: 14px;
+  left: 220px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+
+.ingredients__item-icon-dark {
+  fill: var(--white);
+}
+
+.ingredients__item-button-dark:hover .ingredients__item-icon-dark,
+.ingredients__item-button-dark:focus .ingredients__item-icon-dark {
+  fill: var(--black);
+}
+
+.ingredients__item-button-dark:hover,
+.ingredients__item-button-dark:focus {
+  border: 1px solid var(--white);
+  background-color: var(--white);
+}
+
+/* n-tn Card color */
+
+.ingredients__list-item:nth-child(2n) {
+  background-color: var(--white);
+  border: 1px solid var(--orange);
+}
+
+.ingredients__list-item:nth-child(4n + 1) {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.ingredients__list-item:nth-child(4n + 3) {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.ingredients__img {
+  display: block;
+  max-width: 100%;
+}
+
+.ingredients__item-headline-black {
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28em;
+  letter-spacing: -0.28px;
+  color: var(--black);
+}
+
+.ingredients__item-headline-white {
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.28em;
+  letter-spacing: -0.28px;
+  color: var(--white);
+}

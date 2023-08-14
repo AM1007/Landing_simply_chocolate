@@ -7,11 +7,16 @@
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./benefits.css');
+@import url('./ingredients.css');
+@import url('./how-made.css');
+@import url('./products.css');
+@import url('./topsellers.css');
+@import url('./review.css');
+@import url('./footer.css');
+@import url('./modal.css');
 
 :root {
-  /* --primary-color: #111111;
-  --secondary-color: #ffffff;
-  --accent-color: #fd9222; */
   --transition-dur-and-func: 250ms linear;
   --black: #111111;
   --white: #ffffff;
@@ -47,42 +52,31 @@ body {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
-/* .container {
-  padding: 0 16px;
-  width: 1168px;
-  margin: 0 auto;
-} */
-
-/* .section {
-  padding: 60px 0;
-} */
-
-/* .section-headline {
+.section-headline {
   max-width: 412px;
   margin: 0 auto 50px auto;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
-  line-height: 28px; 
+  line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
   color: var(--black);
-} */
+}
 
-/* .section-headline__span {
+.section-headline__span {
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
   color: var(--orange);
-} */
+}
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -93,4 +87,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
