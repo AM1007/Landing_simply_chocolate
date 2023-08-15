@@ -15,5 +15,82 @@
       LEAVE A REVIEW ABOUT
       <span class="modal-headline__span">OUR CHOCOLATE</span>
     </h2>
+
+    <form class="modal__form">
+      <label class="modal__label" for="user-name">Name</label>
+      <div class="form__field">
+        <input
+          type="text"
+          class="form__input"
+          id="user-name"
+          name="user-name"
+        />
+        <svg class="form__icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-user"></use>
+        </svg>
+      </div>
+
+      <label class="modal__label" for="user-email">Email</label>
+      <div class="form__field">
+        <input
+          type="email"
+          class="form__input"
+          id="user-email"
+          name="user-name"
+        />
+        <svg class="form__icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-mail"></use>
+        </svg>
+      </div>
+
+      <label class="modal__label" for="user-phone">Phone number</label>
+      <div class="form__field">
+        <input
+          type="phone"
+          class="form__input"
+          id="user-phone"
+          name="user-phone"
+        />
+        <svg class="form__icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-phone"></use>
+        </svg>
+      </div>
+
+      <label class="modal__label" for="user-comment">Comment</label>
+      <div class="modal__field">
+        <textarea
+          class="form__textarea"
+          placeholder="Enter text"
+          name="user-comment"
+          id="user-comment"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <input
+        class="modal-policy__input visually-hidden"
+        type="checkbox"
+        id="user-privacy"
+        value="true"
+        name="user-privacy"
+      />
+      <label for="user-privacy" class="form__label-policy">
+        <span class="form__label-policy-span"
+          ><svg
+            class="form__label-policy-icon"
+            width="20"
+            height="20"
+            aria-label="icon-check-white"
+          >
+            <use href="./images/icons.svg#icon-checkmark-filled"></use>
+          </svg>
+        </span>
+        I accept the terms and conditions of the
+        <a class="form__policy-link" href="">Privacy Policy</a>
+      </label>
+
+      <button class="form__button" type="submit">Send</button>
+    </form>
   </div>
 </div>
