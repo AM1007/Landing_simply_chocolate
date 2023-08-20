@@ -17,7 +17,11 @@
 @import url('./modal.css');
 
 :root {
-  --transition-dur-and-func: 250ms linear;
+  --primary-color: #111111;
+  --secondary-color: #ffffff;
+  --accent-color: #fd9222;
+  --transition-dur-and-func: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+
   --black: #111111;
   --white: #ffffff;
   --milk: #fafafa;
@@ -40,11 +44,32 @@ body {
 }
 
 .container {
-  width: 1168px;
+  width: 375px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid blue;
+  }
+}
+
+@media screen and (min-width: 1136px) {
+  .container {
+    width: 1168px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+  }
 }
 
 .accent-color {
@@ -56,24 +81,46 @@ body {
 }
 
 .section-headline {
-  max-width: 412px;
-  margin: 0 auto 50px auto;
-  text-align: center;
-  font-size: 24px;
+  max-width: 283px;
+  margin: 0 auto 32px auto;
+
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: -0.72px;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  text-align: center;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--prmery-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-headline {
+    max-width: 412px;
+    margin: 0 auto 50px auto;
+    font-size: 24px;
+    line-height: 1.16em;
+    letter-spacing: -0.72px;
+  }
 }
 
 .section-headline__span {
-  font-size: 24px;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: -0.72px;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  text-align: center;
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-headline__span {
+    font-size: 24px;
+    line-height: 1.16em;
+    letter-spacing: -0.72px;
+  }
 }
 
 .visually-hidden {

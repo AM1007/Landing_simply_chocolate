@@ -1,26 +1,72 @@
 .ingredients-section {
-  padding: 120px 0;
+  padding: 80px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-section {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients-section {
+    padding: 120px 0;
+  }
 }
 
 .ingredients__list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+/* .ingredients__list {
+  display: flex;
   flex-wrap: wrap;
   column-gap: 32px;
   row-gap: 24px;
-}
+} */
 
 .ingredients__img {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients__img {
+    margin-bottom: 36px;
+  }
 }
 
 .ingredients__list-item {
   position: relative;
-
-  width: 258px;
-  height: 270px;
-  padding: 28px 32px;
-
+  padding: 32px 28px 28px 28px;
+  width: 100%;
   border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients__list-item {
+    width: calc((100% - 32px) / 2);
+    padding: 28px 23px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients__list-item {
+    width: calc((100% - 96px) / 4);
+    padding: 28px 23px;
+  }
 }
 
 /* Card button orange */
@@ -28,7 +74,7 @@
 .ingredients__item-button {
   position: absolute;
   top: 14px;
-  left: 220px;
+  left: 292px;
 
   display: inline-flex;
   align-items: center;
@@ -40,6 +86,13 @@
   border: 1px solid var(--milk);
   transition: border var(--transition-dur-and-func);
   transition: background-color var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients__item-button {
+    top: 14px;
+    left: 214px;
+  }
 }
 
 .ingredients__item-icon {
@@ -63,7 +116,7 @@
 .ingredients__item-button-milk {
   position: absolute;
   top: 14px;
-  left: 220px;
+  left: 292px;
 
   display: inline-flex;
   align-items: center;
@@ -73,6 +126,13 @@
   border-radius: 50%;
   background: transparent;
   border: 1px solid var(--orange);
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients__item-button-milk {
+    top: 14px;
+    left: 214px;
+  }
 }
 
 .ingredients__item-icon-milk {
@@ -96,7 +156,7 @@
 .ingredients__item-button-dark {
   position: absolute;
   top: 14px;
-  left: 220px;
+  left: 292px;
 
   display: inline-flex;
   align-items: center;
@@ -107,6 +167,13 @@
   background: transparent;
   border: 1px solid var(--white);
   transition: background-color var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 1168px) {
+  .ingredients__item-button-dark {
+    top: 14px;
+    left: 214px;
+  }
 }
 
 .ingredients__item-icon-dark {
@@ -128,23 +195,25 @@
 /* n-tn Card color */
 
 .ingredients__list-item:nth-child(2n) {
-  background-color: var(--white);
-  border: 1px solid var(--orange);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
 }
 
 .ingredients__list-item:nth-child(4n + 1) {
-  background-color: var(--orange);
-  border: 1px solid var(--orange);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .ingredients__list-item:nth-child(4n + 3) {
-  background-color: var(--black);
-  border: 1px solid var(--black);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .ingredients__img {
   display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ingredients__item-headline-black {
@@ -154,7 +223,7 @@
   font-weight: 600;
   line-height: 1.28em;
   letter-spacing: -0.28px;
-  color: var(--black);
+  color: var(--primary-color);
 }
 
 .ingredients__item-headline-white {
@@ -164,5 +233,5 @@
   font-weight: 600;
   line-height: 1.28em;
   letter-spacing: -0.28px;
-  color: var(--white);
+  color: var(--secondary-color);
 }

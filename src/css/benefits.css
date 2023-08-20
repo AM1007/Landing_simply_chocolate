@@ -1,46 +1,95 @@
-.benefits {
-  margin-top: 80px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #1e1823;
+.advantages-section {
+  padding-top: 80px;
 }
 
-.benefits-container {
-  padding-left: 34px;
-  padding-right: 34px;
+.advantages-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(17, 17, 17, 1);
 }
 
-.benefits-list {
+@media screen and (min-width: 768px) {
+  .advantages-container {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 86px;
+    row-gap: 62px;
+  }
+}
+
+.advantages__list-item:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .advantages__list-item {
+    position: relative;
+    max-width: 308px;
+  }
+
+  .advantages__list-item:nth-child(2)::before {
+    position: absolute;
+    left: -44px;
+    bottom: 58px;
+
+    content: '';
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .advantages__list-item:nth-child(2)::after {
+    position: absolute;
+    left: 352px;
+    bottom: 58px;
+
+    content: '';
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.advantages__list-circle {
   display: flex;
-  column-gap: 88px;
-}
-
-.benefits-list-item {
-  flex-basis: calc((100% - 176px) / 3);
-}
-
-.benefits-icon-wrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   width: 62px;
   height: 62px;
-  border-radius: 365px;
+  margin-bottom: 19px;
+
   border: 1px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 20px;
+  border-radius: 50%;
 }
 
-.benefits-list-title {
+.advantages__item-headline {
+  margin-bottom: 18px;
+
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 18px;
-  color: var(--white);
+  line-height: normal;
+  color: var(--secondary-color);
 }
 
-.benefits-list-text {
+.advantages__item-paragraph {
+  max-width: 308px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.29;
+  line-height: 1.28em;
   letter-spacing: -0.28px;
   color: rgba(255, 255, 255, 0.7);
 }

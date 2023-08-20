@@ -5,13 +5,27 @@
     </h2>
     <div class="how-made__division-wrap">
       <div class="how-made__division">
-        <img
-          src="./img/image.jpg"
-          alt="chocolate making"
-          class="how-made__division-img"
-          width="600"
-          height="400"
-        />
+        <picture>
+          <source
+            media="(min-width: 1168px)"
+            srcset="./img/how-made/image.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/how-made/img-tablet.jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/how-made/img-mobile.jpg"
+          />
+          <img
+            class="how-made__img"
+            src="./img/how-made/img-desktop.jpg"
+            alt="chocolate"
+            width="auto"
+            height="auto"
+          />
+        </picture>
       </div>
       <div class="how-made__division-text">
         <h3 class="how-made__headline">

@@ -1,34 +1,148 @@
 .hero {
-  padding-top: 381px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 395px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   border-radius: 30px;
-  background-color: rgba(17, 17, 17, 0.6);
+  background-color: rgba(17, 17, 17, 0.4);
   background-image: linear-gradient(
       rgba(17, 17, 17, 0.4),
       rgba(17, 17, 17, 0.4)
     ),
-    url('../img/hero/banner.jpg');
+    url('../img/hero/bg-mobile-x1.jpg');
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.4),
+        rgba(46, 47, 66, 0.4)
+      ),
+      url('../img/hero/bg-mobile-x2.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 671px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../img/hero/bg-tablet-x1.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.4),
+          rgba(46, 47, 66, 0.4)
+        ),
+        url('../img/hero/bg-tablet-x2.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .hero {
+    padding-top: 381px;
+
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../img/hero/bg-desktop-x1.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.4),
+          rgba(46, 47, 66, 0.4)
+        ),
+        url('../img/hero/bg-desktop-x2.jpg');
+    }
+  }
+}
+
+.main-title {
+  max-width: 299px;
+  margin-bottom: 32px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    max-width: 484px;
+
+    font-size: 28px;
+    line-height: 1.21em;
+    letter-spacing: -0.84px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .main-title {
+    max-width: 470px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nero-nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .hero-bottom-block {
   display: flex;
-  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
 }
 
-.main-title {
-  max-width: 470px;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.21;
-  letter-spacing: -0.84px;
-  margin-bottom: 32px;
-  color: var(--white);
+@media screen and (min-width: 768px) {
+  .hero-bottom-block {
+    margin-bottom: 0;
+  }
 }
 
 .buy-now-btn {
+  min-width: 120px;
+  padding: 12px 28px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--secondary-color);
+  border: transparent;
+  border-radius: 100px;
+  background-color: var(--accent-color);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 768px) {
+  .buy-now-btn {
+    min-width: 144px;
+  }
+}
+
+/* .buy-now-btn {
   min-width: 144px;
   font-size: 14px;
   font-weight: 600;
@@ -39,19 +153,40 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 14px;
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
-}
+} */
 
 .buy-now-btn:hover,
 .buy-now-btn:focus {
   background-color: #fcf1e0;
-  color: var(--orange);
+  color: var(--accent-color);
 }
 
 .how-made-link {
+  min-width: 159px;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--secondary-color);
+
+  border-radius: 100px;
+  border: 1px solid var(--secondary-color);
+  transition: color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 768px) {
+  .how-made-link {
+    min-width: 183px;
+  }
+}
+
+/* .how-made-link {
   min-width: 183px;
   font-size: 14px;
   font-weight: 600;
@@ -64,15 +199,35 @@
   border: 1px solid #ffffff;
   transition: color var(--transition-dur-and-func),
     border-color var(--transition-dur-and-func);
-}
+} */
 
 .how-made-link:hover,
 .how-made-link:focus {
-  color: var(--orange);
-  border-color: var(--orange);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .scroll-down-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: -0.36px;
+  color: var(--secondary-color);
+  transition: color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-down-link {
+    font-size: 14px;
+  }
+}
+
+/* .scroll-down-link {
   display: flex;
   align-items: center;
   column-gap: 14px;
@@ -81,37 +236,50 @@
   line-height: 1.29;
   letter-spacing: -0.42px;
   margin-left: auto;
-  color: var(--white);
+  color: var(--secondary-color);
   transition: color var(--transition-dur-and-func);
-}
+} */
 
 .scroll-down-link:hover,
 .scroll-down-link:focus {
-  color: var(--orange);
+  color: var(--accent-color);
 }
 
 .scroll-down-icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38px;
-  height: 38px;
-  background-color: var(--white);
+  width: 28px;
+  height: 28px;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   transition: background-color var(--transition-dur-and-func);
 }
 
+@media screen and (min-width: 768px) {
+  .scroll-down-icon-wrapper {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 .scroll-down-link:hover .scroll-down-icon-wrapper,
 .scroll-down-link:focus .scroll-down-icon-wrapper {
-  background-color: var(--orange);
+  background-color: var(--accent-color);
 }
 
 .scroll-down-icon {
-  fill: var(--orange);
-  transition: fill var(--transition-dur-and-func);
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-down-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .scroll-down-link:hover .scroll-down-icon,
 .scroll-down-link:focus .scroll-down-icon {
-  fill: var(--white);
+  fill: var(--secondary-color);
 }

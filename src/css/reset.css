@@ -1,4 +1,11 @@
 /* Reset styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -7,6 +14,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 p:last-child {
@@ -24,13 +32,23 @@ a {
   text-decoration: none;
 }
 
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
 button {
   cursor: pointer;
 }
 
 img {
   display: block;
-  height: auto;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
 }
 
 .list {
@@ -40,8 +58,4 @@ img {
 
 .link {
   text-decoration: none;
-}
-
-button {
-  cursor: pointer;
 }
