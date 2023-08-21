@@ -36,5 +36,3 @@ name of your repository, and submit the changes to GitHub.
 Next, go to the GitHub repository settings (`Settings` > `Pages`) and set up the
 distribution of the production version of the files from the `/root` folder of
 the `gh-pages` branch, if it was not done automatically.
-
-![GitHub Pages settings](./assets/repo-settings.png)
