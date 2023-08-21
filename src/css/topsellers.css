@@ -18,12 +18,12 @@
 .sellers__list-item {
   display: flex;
   flex-direction: column;
-  background: var(--white);
+  background: var(--secondary-color);
 
   border-radius: 15px;
-  border-right: 1px solid var(--grey);
-  border-bottom: 1px solid var(--grey);
-  border-left: 1px solid var(--grey);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 .sellers__list-item:nth-last-child(-n + 2) {

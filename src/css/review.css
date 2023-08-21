@@ -21,7 +21,7 @@
   line-height: 28px;
   letter-spacing: -0.72px;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--primary-color);
 }
 
 .review__list {
@@ -45,8 +45,8 @@
   height: 200px;
   padding: 56px 24px 24px 24px;
 
-  background: var(--white);
-  border: 1px solid var(--grey);
+  background: var(--secondary-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   box-shadow: 0px 9px 100px 0px rgba(17, 17, 17, 0.03);
 }
@@ -79,7 +79,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33em;
-  color: var(--black);
+  color: var(--primary-color);
 }
 .review__item-paragraph {
   text-align: center;
@@ -87,7 +87,7 @@
   font-weight: 400;
   line-height: 1.28em;
   letter-spacing: -0.28px;
-  color: var(--grey-name);
+  color: rgba(17, 17, 17, 0.7);
 }
 .review__button {
   padding: 14px 40px;
@@ -95,14 +95,14 @@
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  color: var(--black);
+  color: var(--primary-color);
   background: transparent;
   border-radius: 100px;
-  border: 1px solid var(--orange);
+  border: 1px solid var(--accent-color);
 }
 
 .review__button:hover,
 .review__button:focus {
-  background: var(--orange);
-  color: var(--white);
+  background: var(--accent-color);
+  color: var(--secondary-color);
 }

@@ -240,8 +240,8 @@
 
 .footer__email-input:hover,
 .footer__email-input:focus {
-  border-color: var(--white);
-  color: var(--white);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -257,15 +257,9 @@
 }
 
 .footer__email-button {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
-  /* width: 137px;
-  height: 52px; */
   padding: 14px 26px;
 
-  color: var(--white);
+  color: var(--secondary-color);
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -274,13 +268,13 @@
 
   border: none;
   border-radius: 100px;
-  background: var(--orange);
+  background: var(--accent-color);
 }
 
 .footer__email-button:hover,
 .footer__email-button:focus {
-  color: var(--orange);
-  background: var(--white);
+  color: var(--accent-color);
+  background: var(--secondary-color);
 }
 
 @media screen and (min-width: 1168px) {

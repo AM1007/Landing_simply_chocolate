@@ -308,5 +308,5 @@
 
 .mobile-menu__socials-link:hover .mobile-menu__socials-icon,
 .mobile-menu__socials-link:focus .mobile-menu__socials-icon {
-  fill: var(--orange);
+  fill: var(--accent-color);
 }

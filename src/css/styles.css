@@ -21,20 +21,6 @@
   --secondary-color: #ffffff;
   --accent-color: #fd9222;
   --transition-dur-and-func: 750ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  --black: #111111;
-  --white: #ffffff;
-  --milk: #fafafa;
-  --orange: #fd9222;
-  --grey: rgba(17, 17, 17, 0.1);
-  --orange-light: rgba(253, 146, 34, 0.1);
-  --dark: #1e1823;
-  --beigie: #fcf1e0;
-  --grey-light: #fafafa;
-  --grey-text: rgba(255, 255, 255, 0.7);
-  --grey-circle: rgba(255, 255, 255, 0.5);
-  --grey-name: rgba(17, 17, 17, 0.7);
-  --greyest: #4c4c4c;
 }
 
 body {

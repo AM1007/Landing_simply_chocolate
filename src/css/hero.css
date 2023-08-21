@@ -186,21 +186,6 @@
   }
 }
 
-/* .how-made-link {
-  min-width: 183px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--white);
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 100px;
-  border: 1px solid #ffffff;
-  transition: color var(--transition-dur-and-func),
-    border-color var(--transition-dur-and-func);
-} */
-
 .how-made-link:hover,
 .how-made-link:focus {
   color: var(--accent-color);
@@ -226,19 +211,6 @@
     font-size: 14px;
   }
 }
-
-/* .scroll-down-link {
-  display: flex;
-  align-items: center;
-  column-gap: 14px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: -0.42px;
-  margin-left: auto;
-  color: var(--secondary-color);
-  transition: color var(--transition-dur-and-func);
-} */
 
 .scroll-down-link:hover,
 .scroll-down-link:focus {

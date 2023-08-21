@@ -31,13 +31,6 @@
   }
 }
 
-/* .ingredients__list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 32px;
-  row-gap: 24px;
-} */
-
 .ingredients__img {
   margin-bottom: 16px;
 }
@@ -83,7 +76,7 @@
   height: 24px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid var(--milk);
+  border: 1px solid #fafafa;
   transition: border var(--transition-dur-and-func);
   transition: background-color var(--transition-dur-and-func);
 }
@@ -96,19 +89,19 @@
 }
 
 .ingredients__item-icon {
-  fill: var(--milk);
+  fill: #fafafa;
   transition: fill var(--transition-dur-and-func);
 }
 
 .ingredients__item-button:hover .ingredients__item-icon,
 .ingredients__item-button:focus .ingredients__item-icon {
-  fill: var(--orange);
+  fill: var(--accent-color);
 }
 
 .ingredients__item-button:hover,
 .ingredients__item-button:focus {
-  border: 1px solid var(--milk);
-  background-color: var(--milk);
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
 }
 
 /* Card button milk */
@@ -125,7 +118,7 @@
   height: 24px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid var(--orange);
+  border: 1px solid var(--accent-color);
 }
 
 @media screen and (min-width: 1168px) {
@@ -136,19 +129,19 @@
 }
 
 .ingredients__item-icon-milk {
-  fill: var(--orange);
+  fill: var(--accent-color);
   transition: fill var(--transition-dur-and-func);
 }
 
 .ingredients__item-button-milk:hover .ingredients__item-icon-milk,
 .ingredients__item-button-milk:focus .ingredients__item-icon-milk {
-  fill: var(--milk);
+  fill: #fafafa;
 }
 
 .ingredients__item-button-milk:hover,
 .ingredients__item-button-milk:focus {
-  border: 1px solid var(--orange);
-  background-color: var(--orange);
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 /* Card button dark */
@@ -165,7 +158,7 @@
   height: 24px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid var(--white);
+  border: 1px solid var(--secondary-color);
   transition: background-color var(--transition-dur-and-func);
 }
 
@@ -177,19 +170,19 @@
 }
 
 .ingredients__item-icon-dark {
-  fill: var(--white);
+  fill: var(--secondary-color);
   transition: fill var(--transition-dur-and-func);
 }
 
 .ingredients__item-button-dark:hover .ingredients__item-icon-dark,
 .ingredients__item-button-dark:focus .ingredients__item-icon-dark {
-  fill: var(--black);
+  fill: var(--primary-color);
 }
 
 .ingredients__item-button-dark:hover,
 .ingredients__item-button-dark:focus {
-  border: 1px solid var(--white);
-  background-color: var(--white);
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /* n-tn Card color */
