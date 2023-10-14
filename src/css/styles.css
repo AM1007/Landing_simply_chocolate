@@ -1,120 +1,16 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./benefits.css');
-@import url('./ingredients.css');
-@import url('./how-made.css');
-@import url('./products.css');
-@import url('./topsellers.css');
-@import url('./review.css');
-@import url('./footer.css');
-@import url('./modal.css');
+/* Utils */
+@import url('./utils/common.css');
+@import url('./utils/fonts.css');
+@import url('./utils/reset.css');
+/* Partials */
+@import url('./partials/header.css');
+/* @import url('./partials/hero.css');
+@import url('./partials/benefits.css');
+@import url('./partials/ingredients.css');
+@import url('./partials/how-made.css');
+@import url('./partials/products.css');
+@import url('./partials/topsellers.css');
+@import url('./partials/review.css');
+@import url('./partials/footer.css');
 
-:root {
-  --primary-color: #111111;
-  --secondary-color: #ffffff;
-  --accent-color: #fd9222;
-  --transition-dur-and-func: 750ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  font-family: Montserrat, sans-serif;
-  color: var(--black);
-  background-color: #fafafa;
-}
-
-.container {
-  width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1136px) {
-  .container {
-    width: 1168px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.accent-color {
-  color: var(--accent-color);
-}
-
-.section {
-  padding: 60px 0;
-}
-
-.section-headline {
-  max-width: 283px;
-  margin: 0 auto 32px auto;
-
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.2em;
-  letter-spacing: -0.6px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--prmery-color);
-}
-
-@media screen and (min-width: 768px) {
-  .section-headline {
-    max-width: 412px;
-    margin: 0 auto 50px auto;
-    font-size: 24px;
-    line-height: 1.16em;
-    letter-spacing: -0.72px;
-  }
-}
-
-.section-headline__span {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.2em;
-  letter-spacing: -0.6px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .section-headline__span {
-    font-size: 24px;
-    line-height: 1.16em;
-    letter-spacing: -0.72px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import url('./partials/modal.css'); */

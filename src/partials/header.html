@@ -1,162 +1,176 @@
 <header class="page-header">
-  <div class="page-header-container container">
+  <div class="container">
     <nav class="header-nav">
-      <div class="header-logo__wrap">
-        <a href="/index.html" class="header-logo__link link">
-          <span class="header-logo__link-span">simply</span>&nbsp; chocolate
-          <svg
-            class="header-nav__logo-icon"
-            width="24"
-            height="24"
-            aria-label="Simply chocolate logotype"
-          >
-            <use href="./img/sprite.svg#icon-chocolate"></use>
-          </svg>
-        </a>
-      </div>
+      <a href="#" class="header-logo" aria-label="logo">
+        <span class="header-logo__italic">
+          simply
+          <span class="header-logo__normal">chocolate</span>
+        </span>
+        <svg
+          class="header-logo__icon"
+          width="24"
+          height="24"
+          aria-label="Simply chocolate logotype"
+        >
+          <use href="./img/sprite.svg#icon-chocolate"></use>
+        </svg>
+      </a>
 
       <!-- Header menu -->
 
-      <ul class="header-nav__list list">
+      <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a href="./index.html" class="header-nav__link link">Home</a>
+          <a href="./index.html" class="header-nav__link">Home</a>
         </li>
         <li class="header-nav__item">
-          <a href="#how-made" class="header-nav__link link">How it's made?</a>
+          <a href="#how-made" class="header-nav__link">How it's made?</a>
         </li>
         <li class="header-nav__item">
-          <a href="#reviews" class="header-nav__link link"
-            >Chocolate is loved</a
-          >
+          <a href="#our-products" class="header-nav__link">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#top-sellers" class="header-nav__link">Top Sellers</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#reviews" class="header-nav__link">Chocolate is loved</a>
         </li>
       </ul>
+
+      <!-- Socials -->
+
+      <ul class="header-socials__list">
+        <li class="header-socials__item">
+          <a
+            href="https://facebook.com"
+            class="header-socials__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook icon"
+          >
+            <svg class="header-socials__icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-socials__item">
+          <a
+            href="https://instagram.com"
+            class="header-socials__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram icon"
+          >
+            <svg class="header-socials__icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="header-socials__item">
+          <a
+            href="https://twitter.com"
+            class="header-socials__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter icon"
+          >
+            <svg class="header-socials__icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button
+        class="menu-open__button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="menu open button"
+      >
+        <svg
+          class="menu-open__icon"
+          width="32"
+          height="22"
+          stroke="var(--primary-color)"
+        >
+          <use href="./img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
     </nav>
-
-    <!-- Socials -->
-
-    <ul class="header-adrress__list list">
-      <li class="header-adrress__list-item link">
-        <a
-          href="https://facebook.com"
-          class="header-adrress__link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="header-adrress__icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-adrress__list-item link">
-        <a
-          href="https://instagram.com"
-          class="header-adrress__link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="instagram icon"
-        >
-          <svg class="header-adrress__icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="header-adrress__list-item link">
-        <a
-          href="https://twitter.com"
-          class="header-adrress__link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="twitter icon"
-        >
-          <svg class="header-adrress__icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
 
     <!-- Mobile menu -->
 
-    <button
-      class="menu-open__button js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg
-        class="menu-open__icon"
-        width="32"
-        height="22"
-        stroke="var(--primary-color)"
-      >
-        <use href="./img/sprite.svg#icon-burger"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-close__button js-close-menu">
-      <svg class="menu-close__icon" width="28" height="28">
-        <use href="./img/sprite.svg#icon-cross"></use>
-      </svg>
-    </button>
+    <div class="menu-container js-menu-container">
+      <button class="menu-close__button js-close-menu">
+        <svg class="menu-close__icon" width="28" height="28">
+          <use href="./img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <!-- Mobile - Navigation -->
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link">Home</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#how-made" class="header-nav__link">How it's made?</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#our-products" class="header-nav__link">Our products</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#top-sellers" class="header-nav__link">Top Sellers</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="header-nav__link">Chocolate is loved</a>
+            </li>
+          </ul>
+          <!-- Mobile Socials -->
+          <ul class="header-socials__list">
+            <li class="header-socials__item">
+              <a
+                href="https://facebook.com"
+                class="header-socials__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook icon"
+              >
+                <svg class="header-socials__icon" width="24" height="24">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-socials__item">
+              <a
+                href="https://instagram.com"
+                class="header-socials__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram icon"
+              >
+                <svg class="header-socials__icon" width="24" height="24">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
 
-    <ul class="mobile-menu__list list">
-      <li class="mobile-menu__item">
-        <a href="./index.html" class="mobile-menu__link link">Home</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a href="./how-made.html" class="mobile-menu__link link"
-          >How it’s made?</a
-        >
-      </li>
-      <li class="mobile-menu__item">
-        <a href="./topsellers.html" class="mobile-menu__link link"
-          >Chocolate is loved</a
-        >
-      </li>
-    </ul>
-
-    <ul class="mobile-menu__socials-list">
-      <li class="mobile-menu__socials-item list">
-        <a
-          class="mobile-menu__socials-link"
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="mobile-menu__socials-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="mobile-menu__socials-item list">
-        <a
-          class="mobile-menu__socials-link"
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="mobile-menu__socials-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="mobile-menu__socials-item list">
-        <a
-          class="mobile-menu__socials-link"
-          href="https://www.twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="mobile-menu__socials-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+            <li class="header-socials__item">
+              <a
+                href="https://twitter.com"
+                class="header-socials__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter icon"
+              >
+                <svg class="header-socials__icon" width="24" height="24">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </header>
