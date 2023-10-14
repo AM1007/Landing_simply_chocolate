@@ -4,8 +4,8 @@
 @import url('./utils/reset.css');
 /* Partials */
 @import url('./partials/header.css');
-/* @import url('./partials/hero.css');
-@import url('./partials/benefits.css');
+@import url('./partials/hero.css');
+/* @import url('./partials/benefits.css');
 @import url('./partials/ingredients.css');
 @import url('./partials/how-made.css');
 @import url('./partials/products.css');

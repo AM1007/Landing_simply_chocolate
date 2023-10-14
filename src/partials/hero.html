@@ -1,25 +1,40 @@
-<section class="hero container">
-  <h1 class="main-title">
-    Treat yourself or a loved one to our finest ingredients for a moment of pure
-    delight!
-  </h1>
-  <div class="nero-nav-block">
-    <div class="hero-bottom-block">
-      <button class="buy-now-btn" type="button">Buy now</button>
-      <a class="how-made-link link" href="#how-made">How it’s made</a>
-    </div>
-    <a class="scroll-down-link link" href="">
-      scroll down
-      <span class="scroll-down-icon-wrapper">
-        <svg
-          class="scroll-down-icon"
-          width="16"
-          height="16"
-          aria-label="scroll down icon"
+<section id="hero" class="hero">
+  <div class="bg-container">
+    <!-- Title -->
+    <h1 class="main-title">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </h1>
+    <!-- Buttons -->
+    <ul class="hero__list">
+      <li class="hero__item">
+        <button
+          class="buy__btn js-open-modal prime-btn"
+          data-modal="1"
+          type="button"
         >
-          <use href="./img/sprite.svg#icon-scroll-down"></use>
-        </svg>
-      </span>
-    </a>
+          Buy now
+        </button>
+      </li>
+      <li class="hero__item">
+        <a href="#how" class="how-made__btn"> How it’s made </a>
+      </li>
+
+      <li class="hero__item scroll">
+        <a class="scroll__link" href="#footer">
+          <span class="scroll__text">scroll down</span>
+          <span class="scroll__btn">
+            <svg class="scroll__icon" width="12" height="12">
+              <use href="./img/sprite.svg#icon-scroll-down"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <button class="top-btn" id="toTop" aria-label="Go to top" title="Go to top">
+      <svg class="top-btn__icon" width="30" height="14">
+        <use href="./img/sprite.svg#icon-scroll-down"></use>
+      </svg>
+    </button>
   </div>
 </section>
