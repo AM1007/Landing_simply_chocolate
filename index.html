@@ -4,190 +4,204 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Landing_simply_chocolate/assets/favicon-f8003262.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta name="description" content="Chocolate online market" />
     <title>Simply Chocolate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
     
-    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-99a88ca6.js"></script>
-    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-803b9a1e.css">
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-8c18ce1c.js"></script>
+    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-044314fd.css">
   </head>
 
   <body>
     <header class="page-header">
-  <div class="page-header-container container">
+  <div class="container">
     <nav class="header-nav">
-      <div class="header-logo__wrap">
-        <a href="/index.html" class="header-logo__link link">
-          <span class="header-logo__link-span">simply</span>&nbsp; chocolate
-          <svg
-            class="header-nav__logo-icon"
-            width="24"
-            height="24"
-            aria-label="Simply chocolate logotype"
-          >
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-chocolate"></use>
-          </svg>
-        </a>
-      </div>
+      <a href="#" class="header-logo" aria-label="logo">
+        <span class="header-logo__italic">
+          simply
+          <span class="header-logo__normal">chocolate</span>
+        </span>
+        <svg
+          class="header-logo__icon"
+          width="24"
+          height="24"
+          aria-label="Simply chocolate logotype"
+        >
+          <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-chocolate"></use>
+        </svg>
+      </a>
 
       <!-- Header menu -->
 
-      <ul class="header-nav__list list">
+      <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a href="./index.html" class="header-nav__link link">Home</a>
+          <a href="./index.html" class="header-nav__link">Home</a>
         </li>
         <li class="header-nav__item">
-          <a href="#how-made" class="header-nav__link link">How it's made?</a>
+          <a href="#how-made" class="header-nav__link">How it's made?</a>
         </li>
         <li class="header-nav__item">
-          <a href="#reviews" class="header-nav__link link"
-            >Chocolate is loved</a
-          >
+          <a href="#our-products" class="header-nav__link">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#top-sellers" class="header-nav__link">Top Sellers</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#reviews" class="header-nav__link">Chocolate is loved</a>
         </li>
       </ul>
+
+      <!-- Socials -->
+
+      <ul class="header-socials__list">
+        <li class="header-socials__item">
+          <a
+            href="https://facebook.com"
+            class="header-socials__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook icon"
+          >
+            <svg class="header-socials__icon" width="24" height="24">
+              <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-socials__item">
+          <a
+            href="https://instagram.com"
+            class="header-socials__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram icon"
+          >
+            <svg class="header-socials__icon" width="24" height="24">
+              <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="header-socials__item">
+          <a
+            href="https://twitter.com"
+            class="header-socials__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter icon"
+          >
+            <svg class="header-socials__icon" width="24" height="24">
+              <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button
+        class="menu-open__button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="menu open button"
+      >
+        <svg
+          class="menu-open__icon"
+          width="32"
+          height="22"
+          stroke="var(--primary-color)"
+        >
+          <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-burger"></use>
+        </svg>
+      </button>
     </nav>
-
-    <!-- Socials -->
-
-    <ul class="header-adrress__list list">
-      <li class="header-adrress__list-item link">
-        <a
-          href="https://facebook.com"
-          class="header-adrress__link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="header-adrress__icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header-adrress__list-item link">
-        <a
-          href="https://instagram.com"
-          class="header-adrress__link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="instagram icon"
-        >
-          <svg class="header-adrress__icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="header-adrress__list-item link">
-        <a
-          href="https://twitter.com"
-          class="header-adrress__link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="twitter icon"
-        >
-          <svg class="header-adrress__icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
 
     <!-- Mobile menu -->
 
-    <button
-      class="menu-open__button js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg
-        class="menu-open__icon"
-        width="32"
-        height="22"
-        stroke="var(--primary-color)"
-      >
-        <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-burger"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-close__button js-close-menu">
-      <svg class="menu-close__icon" width="28" height="28">
-        <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-cross"></use>
-      </svg>
-    </button>
+    <div class="menu-container js-menu-container">
+      <button class="menu-close__button js-close-menu">
+        <svg class="menu-close__icon" width="28" height="28">
+          <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <!-- Mobile - Navigation -->
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link">Home</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#how-made" class="header-nav__link">How it's made?</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#our-products" class="header-nav__link">Our products</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#top-sellers" class="header-nav__link">Top Sellers</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="header-nav__link">Chocolate is loved</a>
+            </li>
+          </ul>
+          <!-- Mobile Socials -->
+          <ul class="header-socials__list">
+            <li class="header-socials__item">
+              <a
+                href="https://facebook.com"
+                class="header-socials__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook icon"
+              >
+                <svg class="header-socials__icon" width="24" height="24">
+                  <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-socials__item">
+              <a
+                href="https://instagram.com"
+                class="header-socials__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram icon"
+              >
+                <svg class="header-socials__icon" width="24" height="24">
+                  <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
 
-    <ul class="mobile-menu__list list">
-      <li class="mobile-menu__item">
-        <a href="./index.html" class="mobile-menu__link link">Home</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a href="./how-made.html" class="mobile-menu__link link"
-          >How it’s made?</a
-        >
-      </li>
-      <li class="mobile-menu__item">
-        <a href="./topsellers.html" class="mobile-menu__link link"
-          >Chocolate is loved</a
-        >
-      </li>
-    </ul>
-
-    <ul class="mobile-menu__socials-list">
-      <li class="mobile-menu__socials-item list">
-        <a
-          class="mobile-menu__socials-link"
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="mobile-menu__socials-icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="mobile-menu__socials-item list">
-        <a
-          class="mobile-menu__socials-link"
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="mobile-menu__socials-icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="mobile-menu__socials-item list">
-        <a
-          class="mobile-menu__socials-link"
-          href="https://www.twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="facebook icon"
-        >
-          <svg class="mobile-menu__socials-icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+            <li class="header-socials__item">
+              <a
+                href="https://twitter.com"
+                class="header-socials__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter icon"
+              >
+                <svg class="header-socials__icon" width="24" height="24">
+                  <use href="/Landing_simply_chocolate/assets/sprite-9a862ca5.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </div>
 </header>
 
 
-    <main>
+    <!-- <main>
       <section class="hero container">
   <h1 class="main-title">
     Treat yourself or a loved one to our finest ingredients for a moment of pure
@@ -207,7 +221,7 @@
           height="16"
           aria-label="scroll down icon"
         >
-          <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-scroll-down"></use>
+          <use href="./img/sprite.svg#icon-scroll-down"></use>
         </svg>
       </span>
     </a>
@@ -222,7 +236,7 @@
       <li class="advantages__list-item link">
         <div class="advantages__list-circle">
           <svg class="advantages__list-icon" width="32" height="32">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-chocolate-bar"></use>
+            <use href="./img/sprite.svg#icon-chocolate-bar"></use>
           </svg>
         </div>
         <h3 class="advantages__item-headline">Unsurpassed taste</h3>
@@ -236,7 +250,7 @@
       <li class="advantages__list-item link">
         <div class="advantages__list-circle">
           <svg class="advantages__list-icon" width="32" height="32">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-coin"></use>
+            <use href="./img/sprite.svg#icon-coin"></use>
           </svg>
         </div>
         <h3 class="advantages__item-headline">Affordable price</h3>
@@ -251,7 +265,7 @@
       <li class="advantages__list-item link">
         <div class="advantages__list-circle">
           <svg class="advantages__list-icon" width="32" height="32">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-spoon"></use>
+            <use href="./img/sprite.svg#icon-spoon"></use>
           </svg>
         </div>
         <h3 class="advantages__item-headline">Own production</h3>
@@ -277,11 +291,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button">
           <svg class="ingredients__item-icon" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-1-0e99bd17.png"
+          src="./img/ingredients/img-1.png"
           alt="chocolate"
           width="214"
           height="160"
@@ -292,11 +306,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button-milk">
           <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-2-a30442d0.png"
+          src="./img/ingredients/img-2.png"
           alt="milk"
           width="214"
           height="160"
@@ -307,11 +321,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button-dark">
           <svg class="ingredients__item-icon-dark" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-3-44361558.png"
+          src="./img/ingredients/img-3.png"
           alt="nuts"
           width="214"
           height="160"
@@ -322,11 +336,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button-milk">
           <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-4-28898fb6.png"
+          src="./img/ingredients/img-4.png"
           alt="semi-sweet chocolate"
           width="214"
           height="160"
@@ -337,11 +351,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button">
           <svg class="ingredients__item-icon" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-5-550f903e.png"
+          src="./img/ingredients/img-5.png"
           alt="semi-sweet chocolate"
           width="214"
           height="160"
@@ -352,11 +366,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button-milk">
           <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-6-dbc613fa.png"
+          src="./img/ingredients/img-6.png"
           alt="raspberry"
           width="214"
           height="160"
@@ -367,11 +381,11 @@
       <li class="ingredients__list-item link">
         <button type="button" class="ingredients__item-button-dark">
           <svg class="ingredients__item-icon-dark" width="8" height="8">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-arrow-right"></use>
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
         <img
-          src="/Landing_simply_chocolate/assets/img-7-a356577d.png"
+          src="./img/ingredients/img-7.png"
           alt="raspberry"
           width="214"
           height="160"
@@ -393,19 +407,19 @@
         <picture>
           <source
             media="(min-width: 1168px)"
-            srcset="/Landing_simply_chocolate/assets/image-b99ae148.jpg "
+            srcset="./img/how-made/image.jpg"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/Landing_simply_chocolate/assets/img-tablet-e3f9c047.jpg "
+            srcset="./img/how-made/img-tablet.jpg"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/Landing_simply_chocolate/assets/img-mobile-2abf56e0.jpg "
+            srcset="./img/how-made/img-mobile.jpg"
           />
           <img
             class="how-made__img"
-            src="/Landing_simply_chocolate/assets/img-desktop-44cdfea1.jpg"
+            src="./img/how-made/img-desktop.jpg"
             alt="chocolate"
             width="auto"
             height="auto"
@@ -419,7 +433,7 @@
         <ul class="how-made__list list">
           <li class="how-made__list-item link">
             <svg class="how-made__icon" width="8" height="8">
-              <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-ellipse"></use>
+              <use href="./img/sprite.svg#icon-ellipse"></use>
             </svg>
             <p class="list-item__paragraph">
               Heat the milk in a saucepan without bringing it to a boil. Add
@@ -428,7 +442,7 @@
           </li>
           <li class="how-made__list-item link">
             <svg class="how-made__icon" width="8" height="8">
-              <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-ellipse"></use>
+              <use href="./img/sprite.svg#icon-ellipse"></use>
             </svg>
             <p class="list-item__paragraph">
               At the same time, prepare a water bath. Melt the butter on it.
@@ -436,7 +450,7 @@
           </li>
           <li class="how-made__list-item link">
             <svg class="how-made__icon" width="8" height="8">
-              <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-ellipse"></use>
+              <use href="./img/sprite.svg#icon-ellipse"></use>
             </svg>
             <p class="list-item__paragraph">
               "Mix" the milk mixture and already liquid butter. Mix thoroughly
@@ -446,7 +460,7 @@
           </li>
           <li class="how-made__list-item link">
             <svg class="how-made__icon" width="8" height="8">
-              <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-ellipse"></use>
+              <use href="./img/sprite.svg#icon-ellipse"></use>
             </svg>
             <p class="list-item__paragraph">
               Heat the mixture over low heat, letting it barely boil. it.
@@ -454,7 +468,7 @@
           </li>
           <li class="how-made__list-item link">
             <svg class="how-made__icon" width="8" height="8">
-              <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-ellipse"></use>
+              <use href="./img/sprite.svg#icon-ellipse"></use>
             </svg>
             <p class="list-item__paragraph">
               Pour the chocolate into special containers (can be replaced with
@@ -467,7 +481,7 @@
   </div>
 </section>
 
-      <section class="products-section">
+      <section id="our-products" class="products-section">
   <div class="container">
     <h2 class="section-headline">
       OUR <span class="section-headline__span">PRODUCTS</span>
@@ -476,7 +490,7 @@
     <ul class="products__list list">
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-11-a1ddbe12.jpg"
+          src="./img/products/img-11.jpg"
           alt="Dark chocolate orange"
           width="230"
           height="201"
@@ -488,7 +502,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-12-b360913e.jpg"
+          src="./img/products/img-12.jpg"
           alt="Milk chocolate APPLE&CRANBERRY"
           width="230"
           height="201"
@@ -500,7 +514,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-13-bfe7cc69.jpg"
+          src="./img/products/img-13.jpg"
           alt="Dark chocolate lime&sea salt"
           width="230"
           height="201"
@@ -512,7 +526,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-14-107ee3a3.jpg"
+          src="./img/products/img-14.jpg"
           alt="Dark chocolate pineapple"
           width="230"
           height="201"
@@ -524,7 +538,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-15-7d5ef36a.jpg"
+          src="./img/products/img-15.jpg"
           alt="Milk chocolate Classic"
           width="230"
           height="201"
@@ -536,7 +550,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-16-6c000d68.jpg"
+          src="./img/products/img-16.jpg"
           alt="Milk chocolate honey"
           width="230"
           height="201"
@@ -548,7 +562,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-17-6455aef5.jpg"
+          src="./img/products/img-17.jpg"
           alt="Dark chocolate Roasted fruits"
           width="230"
           height="201"
@@ -560,7 +574,7 @@
       </li>
       <li class="products__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-18-02ae4c2c.jpg"
+          src="./img/products/img-18.jpg"
           alt="White chocolate Classic"
           width="230"
           height="201"
@@ -574,7 +588,7 @@
   </div>
 </section>
 
-      <section class="sellers-section">
+      <section id="top-sellers" class="sellers-section">
   <div class="container">
     <h2 class="section-headline">
       <span class="section-headline__span">TOP</span> SELLERS
@@ -584,7 +598,7 @@
       <li class="sellers__list-item link">
         <div class="sellers__wrap">
           <img
-            src="/Landing_simply_chocolate/assets/img-21-d7f64d0e.jpg"
+            src="./img/topsellers/img-21.jpg"
             alt="chocolate with nuts"
             width="368"
             height="464"
@@ -603,7 +617,7 @@
       <li class="sellers__list-item link">
         <div class="sellers__wrap">
           <img
-            src="/Landing_simply_chocolate/assets/img-22-9d674032.jpg"
+            src="./img/topsellers/img-22.jpg"
             alt="chocolate with nuts"
             width="368"
             height="464"
@@ -621,7 +635,7 @@
       <li class="sellers__list-item link">
         <div class="sellers__wrap">
           <img
-            src="/Landing_simply_chocolate/assets/img-23-dea7e67e.jpg"
+            src="./img/topsellers/img-23.jpg"
             alt="chocolate with nuts"
             width="368"
             height="464"
@@ -649,7 +663,7 @@
     <ul class="review__list list">
       <li class="review__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-31-e8aeb334.png"
+          src="./img/review/img-31.png"
           alt="Victoria Dobrzhanska avatar"
           width="80"
           height="80"
@@ -663,7 +677,7 @@
       </li>
       <li class="review__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-32-22f9513b.png"
+          src="./img/review/img-32.png"
           alt="Nazar Babenko avatar"
           width="80"
           height="80"
@@ -677,7 +691,7 @@
       </li>
       <li class="review__list-item link">
         <img
-          src="/Landing_simply_chocolate/assets/img-33-024b8d4c.png"
+          src="./img/review/img-33.png"
           alt="Olena Kampusch avatar"
           width="80"
           height="80"
@@ -705,7 +719,7 @@
         height="14"
         aria-label="icon-modal-close"
       >
-        <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-cross"></use>
+        <use href="./img/sprite.svg#icon-cross"></use>
       </svg>
     </button>
 
@@ -726,7 +740,7 @@
             required
           />
           <svg class="modal__icon" width="auto" height="auto">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-user"></use>
+            <use href="./img/sprite.svg#icon-user"></use>
           </svg>
         </span>
       </label>
@@ -742,7 +756,7 @@
             required
           />
           <svg class="modal__icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-mail"></use>
+            <use href="./img/sprite.svg#icon-mail"></use>
           </svg>
         </span>
       </label>
@@ -759,7 +773,7 @@
             required
           />
           <svg class="modal__icon" width="24" height="24">
-            <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-phone"></use>
+            <use href="./img/sprite.svg#icon-phone"></use>
           </svg>
         </span>
       </label>
@@ -781,7 +795,7 @@
           required
         />
         <svg class="modal__checkbox-icon" width="20" height="20">
-          <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-checkmark"></use>
+          <use href="./img/sprite.svg#icon-checkmark"></use>
         </svg>
         I accept the terms and conditions of the&nbsp;
         <a class="accent-color" href="">Privacy Policy</a>
@@ -806,21 +820,21 @@
             <li class="footer__contacts-item link">
               <a class="footer__contacts-link" href="">
                 <svg class="footer-adrress__icon" width="24" height="24">
-                  <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-facebook"></use>
+                  <use href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__contacts-item link">
               <a class="footer__contacts-link" href="">
                 <svg class="footer-adrress__icon" width="24" height="24">
-                  <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-instagram"></use>
+                  <use href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__contacts-item link">
               <a class="footer__contacts-link" href="">
                 <svg class="footer-adrress__icon" width="24" height="24">
-                  <use href="/Landing_simply_chocolate/assets/sprite-7c7757b4.svg#icon-twitter"></use>
+                  <use href="./img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -881,9 +895,8 @@
     </div>
   </div>
 </footer>
+ -->
 
-
-    
     
   </body>
 </html>
