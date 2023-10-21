@@ -1,115 +1,292 @@
-<section class="ingredients-section">
+<section class="ingredients section">
   <div class="container">
-    <h2 class="section-headline">
-      It all adds up to one exceptional
-      <span class="section-headline__span">taste</span> sensation
-    </h2>
+    <div class="ingredients-content">
+      <h2 class="ingredients__title title">
+        It all adds up to one exceptional
+        <span class="title-accent">taste</span> sensation
+      </h2>
+      <p class="components__paragraph">
+        At Simply Chocolate, we believe that the secret to exceptional chocolate
+        is in the details. From the sourcing of the finest ingredients to the
+        careful crafting of each individual piece, every step of our process
+        adds up to one exceptional taste sensation.
+      </p>
+    </div>
 
-    <ul class="ingredients__list list">
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button">
-          <svg class="ingredients__item-icon" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-1.png"
-          alt="chocolate"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">MILK CHOCOLATE</h3>
+    <!-- Cards -->
+
+    <ul class="ingredients__list">
+      <!-- MILK CHOCOLATE -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front orange-bg">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/chocolate1-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/chocolate1-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/1chocolate-desktop-1x.webp 1x,
+                  ./img/ingredients/1chocolate-desktop-2x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                loading="lazy"
+                src="./img/ingridients/1chocolate-desktop-1x.png"
+                alt="chocolate"
+              />
+            </picture>
+            <h3 class="item-front__headline">MILK CHOCOLATE</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">MILK CHOCOLATE</h3>
+            <p class="item-back__text">
+              Indulge in Perfection, Savor our Milk Chocolate's Flawless
+              Quality!
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-milk">
-          <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-2.png"
-          alt="milk"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-black">MILK</h3>
+
+      <!-- MILK -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/milk2-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/milk2-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/2milk-desktop-1x.webp 1x,
+                  ./img/ingredients/2milk-desktop-2x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                src="./img/ingredients/2milk-desktop-1x.png"
+                alt="milk"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">MILK</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">MILK</h3>
+            <p class="item-back__text">
+              Experience Milk of the Highest Caliber, Perfection in Every Sip!
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-dark">
-          <svg class="ingredients__item-icon-dark" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-3.png"
-          alt="nuts"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">NUTS</h3>
+
+      <!-- NUTS -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front black">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/3nuts-desktop-1x.webp 1x,
+                  ./img/ingredients/3nuts-desktop-2x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/nuts3-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/nuts3-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+              <img
+                class="front-img"
+                src="./img/ingredients/3nuts-desktop-1x.png"
+                alt="nuts"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">NUTS</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">NUTS</h3>
+            <p class="item-back__text">
+              Elevate Your Taste with Nuts of Supreme Quality, Pure Perfection
+              in Every Crunch!
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-milk">
-          <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-4.png"
-          alt="semi-sweet chocolate"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-black">SEMI-SWEET CHOCOLATE</h3>
+
+      <!-- SEMI-SWEET CHOCOLATE -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/4coffe-desktop-1x.webp 1x,
+                  ./img/ingredients/4coffe-desktop-2x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/coffe4-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/coffe4-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+
+              <img
+                class="front-img"
+                src="./img/ingredients/4coffe-desktop-1x.png"
+                alt="semi-sweet chocolate"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">SEMI - SWEET CHOCOLATE</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">SEMI - SWEET CHOCOLATE</h3>
+            <p class="item-back__text">
+              Savor the Magic in Every Bite: Our Semi-Sweet Chocolate,
+              Perfection Perfected.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button">
-          <svg class="ingredients__item-icon" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-5.png"
-          alt="semi-sweet chocolate"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">CACAO</h3>
+
+      <!-- CACAO -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front orange-bg">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/cacao5-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/cacao5-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/5cacao-desktop-1x.webp 1x,
+                  ./img/ingredients/5cacao-desktop-1x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                loading="lazy"
+                src="./img/ingridients/5cacao-desktop-1x.png"
+                alt="cacao"
+              />
+            </picture>
+            <h3 class="item-front__headline">CACAO</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">CACAO</h3>
+            <p class="item-back__text">
+              Unleash the Temptation of Excellence: Our Semi-Sweet Cacao,
+              Perfection in Every Morsel.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-milk">
-          <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-6.png"
-          alt="raspberry"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-black">RASPBERRY</h3>
+
+      <!-- RASPBERRY -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/raspberry6-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/raspberry6-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/6raspberry-desktop-1x.webp 1x,
+                  ./img/ingredients/6raspberry-desktop-2x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                src="./img/ingredients/6raspberry-desktop-1x.png"
+                alt="raspberry"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">RASPBERRY</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">RASPBERRY</h3>
+            <p class="item-back__text">
+              Elevate Your Senses with Perfection in Every Bite: Sweet Raspberry
+              Bliss.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-dark">
-          <svg class="ingredients__item-icon-dark" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-7.png"
-          alt="raspberry"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">COCONUT OIL</h3>
+
+      <!-- COCONUT OIL -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front black">
+            <picture>
+              <source
+                srcset="
+                  ./img/ingredients/7coconut-desktop-1x.webp 1x,
+                  ./img/ingredients/7coconut-desktop-2x.webp 2x
+                "
+                media="( min-width: 1200px )"
+              />
+              <source
+                srcset="
+                  ./img/ingredients/coconut7-mobile-tablet-1x.webp 1x,
+                  ./img/ingredients/coconut7-mobile-tablet-2x.webp 2x
+                "
+                media="( max-width: 1199px )"
+              />
+              <img
+                class="front-img"
+                src="./img/ingredients/7coconut-desktop-1x.png"
+                alt="coconut"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">COCONUT</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">COCONUT</h3>
+            <p class="item-back__text">
+              Indulge in Paradise: Our Coconut, Where Quality is a Tropical
+              Delight.
+            </p>
+          </div>
+        </div>
       </li>
     </ul>
   </div>

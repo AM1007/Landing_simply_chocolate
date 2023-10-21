@@ -1,2 +1,2 @@
 import './js/mobile-menu.js';
-import './js/scroll.js';
+// import './js/scroll.js';
