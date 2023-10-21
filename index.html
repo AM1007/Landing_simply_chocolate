@@ -18,8 +18,8 @@
     />
     
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-b887593a.js"></script>
-    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-862035ba.css">
+    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-ab4b016d.js"></script>
+    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-1b466e68.css">
   </head>
 
   <body>
@@ -295,124 +295,259 @@
   </div>
 </section>
 
-      <!-- <section class="ingredients-section">
+      <section class="ingredients section">
   <div class="container">
-    <h2 class="section-headline">
-      It all adds up to one exceptional
-      <span class="section-headline__span">taste</span> sensation
-    </h2>
+    <div class="ingredients-content">
+      <h2 class="ingredients__title title">
+        It all adds up to one exceptional
+        <span class="title-accent">taste</span> sensation
+      </h2>
+      <p class="components__paragraph">
+        At Simply Chocolate, we believe that the secret to exceptional chocolate
+        is in the details. From the sourcing of the finest ingredients to the
+        careful crafting of each individual piece, every step of our process
+        adds up to one exceptional taste sensation.
+      </p>
+    </div>
 
-    <ul class="ingredients__list list">
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button">
-          <svg class="ingredients__item-icon" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-1.png"
-          alt="chocolate"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">MILK CHOCOLATE</h3>
+    <!-- Cards -->
+
+    <ul class="ingredients__list">
+      <!-- MILK CHOCOLATE -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front orange-bg">
+            <picture>
+              <source
+                srcset="/Landing_simply_chocolate/assets/chocolate1-mobile-tablet-1x-030c9cd9.webp 1x, /Landing_simply_chocolate/assets/chocolate1-mobile-tablet-2x-d9ba50ef.webp 2x"
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="/Landing_simply_chocolate/assets/chocolate1-mobile-tablet-1x-030c9cd9.webp 1x, /Landing_simply_chocolate/assets/1chocolate-desktop-2x-ac424e8a.webp 2x"
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                loading="lazy"
+                src="./img/ingridients/1chocolate-desktop-1x.png"
+                alt="chocolate"
+              />
+            </picture>
+            <h3 class="item-front__headline">MILK CHOCOLATE</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">MILK CHOCOLATE</h3>
+            <p class="item-back__text">
+              Indulge in Perfection, Savor our Milk Chocolate's Flawless
+              Quality!
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-milk">
-          <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-2.png"
-          alt="milk"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-black">MILK</h3>
+
+      <!-- MILK -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front">
+            <picture>
+              <source
+                srcset="data:image/webp;base64,UklGRqoFAABXRUJQVlA4WAoAAAAQAAAA3wAAqgAAQUxQSDgDAAABoMPa2hq7+n9LF/7ClVtP53YcRmvKMDN2DFMFS2bsaNrpcqENMzM+ZgjnMYb8PRz9/j7pfDckRcQEmHeFhll1Z8fR/+3YWc2cKlz1Onm8UA3UkH5Eni9ESmi6Tt47nA5SKjDWQeYvp7IOSr5yojzWQfCRnzwnamtSQtVbPtooMbrrIyei24EWTM3HvxcYNU5oLG+gux7SvKFGIz0k5Nmpp0kPqafc6SHzRJEexvtK9LDYV0UPu3zNUkNw1tdONUT3PeXH1JCR75+dFhZ7o4oWzvpbo4Tomb8PQx2MpwJTHez3l9NiFaTP/BF9GmpgFxWZj8fPuoeF0FkLn1lMxeYpfNGHBVEdvsVU9KMUPHe2sLwO3kwq/lEJuugqA9oJ3Rzi+F0JuPAqC1oD3Hji+bGDrekqE5oF2yDi+nGIWhsbmgBa6QWfUwFkdj3xfZpAFn7KiNZANog4fxwCZuusnk4ArHSXFe0GbA7xvhvitZ/Z01Fwhd8xo91wZS+43bVorSf2MVj2LL8JYJW+47cbrEEv+J0CayXxf+qw2i+AKljdlTALqpAkboEqEdFmkcpEnGpCaryIT0Kk5oj4JUJqvYwYqV0iKEGqTUZ3pM7K6IvUVRkVpD6VMRipuzJGIfVd18QUoOwvb7sw373yuaueT2WMQup99VxVz1kZg4Gy+7Vj9NMmo4JUvWuiL1K7uia6q6eM1PpXPitlJEgtFvFr/CphziufmSLuR0DZ8doxMr7UT4jUIBG33auErEviTNMrBJvKsEAZGZ36Ma8SEvWURNReKUTasaGILUgZpx3bpB0jYwVU9jvtGP3clTD/1cKnEqZg9b56rqrnrIRRUNn9EgZDZfTTJqGCVV1CX6x2qWe9hDJUdqWEBCqzWEKM1UwJDqtBAv4MsEr/4PelwTp6yO80WPYsvy1gmZX8RqOV8ovRajrLrWbgzv7g9aCMV7CS1xQDeLiPU60JMeMO8Ol0BnPXxqXmDOrBml84/DnfIN/9bHE3ehjsm6Z8WMyNYYGBPxh26gdfD2o9AqNBa5qGbTnw8d2nTxv45cvTbQt6WBPo4D8DF8VJudy3b9++5XIcR01GsYEJzNvUAVZQOCBMAgAA8BgAnQEq4ACrAD6RSJ5KpaSmoaZ0KTjQEglpbuFvIQOext7oImt/2Vo+IKRV6g4+tcXLu7u7u4EHOHWMauqnuv1HZmZmZg7HsAgw6FppPkGdnMEeqTvRji/IiIhVkH9Ht6jE/MZDcLoO7u7uxwQWf0QqqtDFl3eLu7u7qS76+yb3J5jd3d3Y36/NTwcE0KqqqqJhQGrfW/pDaa3//4B/hf9g9VVVVS+y0ubPXMM1CmQwcxnApjgi5zQqqqqoc48xqYucgd0+H80NKaELZrF1QAD+/kuSo/qNoAyXsoEDbU23WZ7oNrxK3N/5Kg9CDh0mXv88wEwI0HOb6//XeIB3Mgij+zVeeBi/1DmSOPKx7qyCgjyDkzGEmee7c6TlHZSVSrN75LV222CE8Yn7U84xeVc2WpY9u1tr4mytZ/NSZWqnMsYCtkxgGF/0DL+kTDpOtx1vDxQGXp5mX9auWhkfTdPmuQk0lqEoOfaRgusr99Y5DOel3QefxA4q7X/trRfh7V4ufx+COgG9F9Wu3iUuqjrYnnvl68vngTo36aejsKAi2pDZoAq9LWw9m+OogT431yhsDpk+yPgxRRtjd7XrxHV0z5DVdNHDpZlADi4A4GVaSaD15D3Mo1Uq8VwMiFbKR3vliv93tyW8u5VE06ROiiZRYbuIwEI33yEr/meV0W4YLHuDgGUh7D3q9O1b0Fp/+NdLRq0+v+6jV9nk1UlRnZSR+3IP71dXz/Y8wkWEC2LR9RFbnVxAEnDvxvWB+c2Y1Pa7Eq8j7nYAAAAA 1x, data:image/webp;base64,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 2x"
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="data:image/webp;base64,UklGRqoFAABXRUJQVlA4WAoAAAAQAAAA3wAAqgAAQUxQSDgDAAABoMPa2hq7+n9LF/7ClVtP53YcRmvKMDN2DFMFS2bsaNrpcqENMzM+ZgjnMYb8PRz9/j7pfDckRcQEmHeFhll1Z8fR/+3YWc2cKlz1Onm8UA3UkH5Eni9ESmi6Tt47nA5SKjDWQeYvp7IOSr5yojzWQfCRnzwnamtSQtVbPtooMbrrIyei24EWTM3HvxcYNU5oLG+gux7SvKFGIz0k5Nmpp0kPqafc6SHzRJEexvtK9LDYV0UPu3zNUkNw1tdONUT3PeXH1JCR75+dFhZ7o4oWzvpbo4Tomb8PQx2MpwJTHez3l9NiFaTP/BF9GmpgFxWZj8fPuoeF0FkLn1lMxeYpfNGHBVEdvsVU9KMUPHe2sLwO3kwq/lEJuugqA9oJ3Rzi+F0JuPAqC1oD3Hji+bGDrekqE5oF2yDi+nGIWhsbmgBa6QWfUwFkdj3xfZpAFn7KiNZANog4fxwCZuusnk4ArHSXFe0GbA7xvhvitZ/Z01Fwhd8xo91wZS+43bVorSf2MVj2LL8JYJW+47cbrEEv+J0CayXxf+qw2i+AKljdlTALqpAkboEqEdFmkcpEnGpCaryIT0Kk5oj4JUJqvYwYqV0iKEGqTUZ3pM7K6IvUVRkVpD6VMRipuzJGIfVd18QUoOwvb7sw373yuaueT2WMQup99VxVz1kZg4Gy+7Vj9NMmo4JUvWuiL1K7uia6q6eM1PpXPitlJEgtFvFr/CphziufmSLuR0DZ8doxMr7UT4jUIBG33auErEviTNMrBJvKsEAZGZ36Ma8SEvWURNReKUTasaGILUgZpx3bpB0jYwVU9jvtGP3clTD/1cKnEqZg9b56rqrnrIRRUNn9EgZDZfTTJqGCVV1CX6x2qWe9hDJUdqWEBCqzWEKM1UwJDqtBAv4MsEr/4PelwTp6yO80WPYsvy1gmZX8RqOV8ovRajrLrWbgzv7g9aCMV7CS1xQDeLiPU60JMeMO8Ol0BnPXxqXmDOrBml84/DnfIN/9bHE3ehjsm6Z8WMyNYYGBPxh26gdfD2o9AqNBa5qGbTnw8d2nTxv45cvTbQt6WBPo4D8DF8VJudy3b9++5XIcR01GsYEJzNvUAVZQOCBMAgAA8BgAnQEq4ACrAD6RSJ5KpaSmoaZ0KTjQEglpbuFvIQOext7oImt/2Vo+IKRV6g4+tcXLu7u7u4EHOHWMauqnuv1HZmZmZg7HsAgw6FppPkGdnMEeqTvRji/IiIhVkH9Ht6jE/MZDcLoO7u7uxwQWf0QqqtDFl3eLu7u7qS76+yb3J5jd3d3Y36/NTwcE0KqqqqJhQGrfW/pDaa3//4B/hf9g9VVVVS+y0ubPXMM1CmQwcxnApjgi5zQqqqqoc48xqYucgd0+H80NKaELZrF1QAD+/kuSo/qNoAyXsoEDbU23WZ7oNrxK3N/5Kg9CDh0mXv88wEwI0HOb6//XeIB3Mgij+zVeeBi/1DmSOPKx7qyCgjyDkzGEmee7c6TlHZSVSrN75LV222CE8Yn7U84xeVc2WpY9u1tr4mytZ/NSZWqnMsYCtkxgGF/0DL+kTDpOtx1vDxQGXp5mX9auWhkfTdPmuQk0lqEoOfaRgusr99Y5DOel3QefxA4q7X/trRfh7V4ufx+COgG9F9Wu3iUuqjrYnnvl68vngTo36aejsKAi2pDZoAq9LWw9m+OogT431yhsDpk+yPgxRRtjd7XrxHV0z5DVdNHDpZlADi4A4GVaSaD15D3Mo1Uq8VwMiFbKR3vliv93tyW8u5VE06ROiiZRYbuIwEI33yEr/meV0W4YLHuDgGUh7D3q9O1b0Fp/+NdLRq0+v+6jV9nk1UlRnZSR+3IP71dXz/Y8wkWEC2LR9RFbnVxAEnDvxvWB+c2Y1Pa7Eq8j7nYAAAAA 1x, data:image/webp;base64,UklGRgoLAABXRUJQVlA4WAoAAAAQAAAAmwEAPwEAQUxQSP4FAAABoPNa2+PGefF2XzlfOcWUU1Dt9FNo2ukIB20qIjuyXk7PDV2wqc5pAwGCv4BwphrnjaBUaIODKFhcwdQKS2LD6xy+eQk8nyjAETEB9L//D1k3YZzk+Yl/mKdJbBl8Jkxq7Q+/evhwMpG/P5lMHj78qtM+EVtGnc07D+W/nnzVzg3ibO2riTg5+TC3aOOwMxFnJ20DtvArcbpjocZNcXtyAmrxV47JGtROTFyTAGk1cb4CNG76DDoxcS5CWvrQtSEjzX7o2jsE9ZprK1iLH7o1DLBm2m4VBPbsiUujCG287tI7jDY658hzEXm+THBffvXcCZFXrz4O8VbZEGfbjDf7oTsNwru59ifPXagCjv/sL5//nVd/lOd/J0Hc5b/33y4aGL9xzQ9lgLN9d6qACx06Cbj4ljsF4obuXMQbJzvudBlulIq7HwZw4yMO3arAjVoOPcrgxj2Hdk7CzQwdkjajLd5xqWvQlj9z6ZEFGxfidAI2c82tk2ALH7vVZayl4vatCGuFYzsZ1GzfMWlCLX/s2odIM5fF+Qhoduheg3GWi/v9CGXM10qwm6OM4mEJ5BrMCinjLAIZD0shTYxxKuUchBAzl0syziGWPy6JXIPYNSnrKAFYuFsaKQy8TEvKu5nAKx6WSFqMrrqUeTPEFttbpZI6Y+vIbrm+sMjieCAlP4Isqs/K1rfACm9J2X/JGVf1WenkwxBW9gsp/zSHVU00/NCAyvZVGOeY4iN7KkgXU3YgOk5jSOUzJaTJgDJ90XI9BFT6kxrTJp74sui5buBkx4rICUbTEdG0a8Bke6qMEzDlW6pIE0w90XXdQsmOlRnnUKqJtm0LJNtXZz0BUjpSR5pAKkTfdQMj84VC4wxFnO4pJE0GkWmJxmsWRPFApXEConymkjRBdFl07hoI2ftKrScQSveUkpMMIK7PtGob/LDpidbrEX4o3FRLMgClM72aACpE765BD3NPsY0Keii8r9jTDD7plmLSQA8fmWnWRo9pieZr6LED1Z4a8MRbqkkCnlR0PwmeunJN8FxWrs3Q4Z5yaxY69gvtIujE95XbqEAn3VLuSQKdfE85qULnyEy7BnK4LtpfRA611OtA55p6a9Dpq7cBnS/0Y+RsqvfE4IZ5pJ5Y3JCd6RcBJxT9K8CJ50CCG07mQIYbSudAFTi51zgyB04Cp+Y16nOgAZxiDhSHcLTmwMXDN/jyogZ5DfYa5DXYa5DfaB1KUywwFcCpL2zUvMYRz9cATr6wkcyBkwsbVeDEPoNDn0GeY6ZfBhy7sGH29EsOqPHYY/A8qOCGeMtn0E9eY1O/6KDaffVmFjm39AuQ84XXGOhnfMY+dPpeo6feNi9sEHKvqXfvwNplr/cxcrjlM8jvdaBTLGzU1VtFDnsN0u8idGoz7Qqv0YDOkcWNPe1Oeo0qcjj3GXREu33s5OplB9fGPi+BTqrdNni2vMZPixqJehXsbHq8e9iJ73sM9hrkN8Jb2kUH1uwXCxsD5T7GjlHPYqe/qME97YKDa9d8BmnXMQfXLvsMVo+hQy3lVrHDXoP8RuE16h7vInhqyhUEXT7iM8hv5B6vgR1OfQb5jUS5k+iZ+ozYb/ysWxU8od/Y1C1Dzy2vMdAtAY/te42ebhXssLmmW4QdMi3dAvQUqu0b8HBtqtk2g4fyPc3uEXrTnzX7GD7xULNV+NiBZgV8+Jpi09fgQzXFRgl+kqleA4sfO9BrlfFjiqlW09cIwMmuVoMIQMzXlBq9xgAiSh/rNAgIwqZQaVolEIe3NOoYFFG+o8+9iGDMtWfa3MsYR2Q6z3TZrxpCsmmqsn+SwGwvTvXYbxg0kSnGWmyfJECb6i0dtjODKOLklgaDZQI12+64bKN3AsK1qd4q13DFELCZouZueYaXlgjdnKw+Lsfw0pIhfDEvr47dG15aYkJ5sNIZuzS8tMxEMGPmYOm11Y1fnv13o+E755aXmNDOzMHSStHurm08efr0H832t0eDwTvnVpYCJsgzERNzENgoqiRJlr3211mWVKIgCJiJyQsy/VNmpv/9f9g6VlA4IOYEAADQPQCdASqcAUABPpFInUulsymipBTpImASCWlu4XHhDbNF0AfoAzUAeVnoJVWvl++XWETAqAjFMlqzihCTynV+LJbH752HRXAAiRF+w5xT4n7VWDHEWL7Va+X752HQnFhxL3ZLfHrPeetu96/p7NQumCkWx++dj987H75dklMq2ViKL++dj987H752P1NCULOTd8ErPhZ81MlCmkNuQorqKne0HVr5fvnY/fOiUCyqEzY3Ii9yJBAf5kBXWcjVRZ9AT/NfS1GHtVr5fvnY/efybSRtOE3pHpSY/pQzk/wLjx6n+ParXy/fOx6uFUyqyhZHfOdrEs67x3752P3zsfvl41MadeJ7xXnBVDMZnl++dj987H6swTO8l9bn747987H752P3y8djGlV18Tj6+dj987H752IUnEeeF+fWwhWCxfarXy/fOxCc/RJxhKFszm1WXBdj987H752P1aNoqZVb62gPZ0X2q18v3zpF/qrKXRmNQ+BCcv3zsfvnY/ee/FpcfebKiHkx9fOx++dj987EKXkDB3p0QhNnMEROx++dj986LqiJXWOz7zZ9DdRN4oJjiLF9qtfL95yXxG4FOto0rO/0kC+7rzy4Ywns3duTe12AGRFsfvnY/fOxDmHbcJdwEmUc/covqAT0GUfClDClSRA6tfL9QAD+/tHj4LqULEd8UfqCDI78AkeojQteIbP3pt2dtRp+N/XVjKLG/rqxlFjd67/cUZJonhEIAZqp08BVKUMPYqjtvQrw86XojHaUFEdCKHx1nvXdex+TR8AK9TltEVCDyXDpN9hhBDXhLje1qPBnK/K/2OqNtFN8mzfeY/OTkAAAWPAfVsncTlji0AfyOd+G+sN/Q7MO40kyKTlDEUdfRn8sQHPAvD9+jcOe4EUd8VIdvTWqkvvkOBqQpC/EuN5edBDD11anlKYpIZT6tf4NGjXLsgTA/xw6HLgCTWCYkgF1lYFNIOZTbY9sDhRyzm+pUt4lADh4MkrgIGdRSL3CAECM0MzLf3VIKlxrbHc+LUrz4a7nrArOT5aWG84TbGCdOUWsIX8EAeRFPTRY4vn9awdsVFRLl4eS5fuAcet28xZrRMYhcpmQIHB7D42fQ1xk3xHJaeE8miEVWKnHbVi9tAjh6GGki7MEkkGWhrxxOolYPB6iZbnWPN6zUh/6ksAgwh3u7wYkOM0FF5PUe/gHTxrbngHzF0vbKwySm+b/R3VcuBdPBZho+OkyZuUf531aQsiLvbyTajRAXtR+8AgbK2wUpBzGLYODsgkBa3q0oLA7wSq8BCUi90hy0jwUcsN6glI+eDgrBjAZgWhKxDlBqnI6bt6cs4PMP8EpZPv8AM012hrrxFLgbF5MEg+x0tO682bJrbIL4hqAhKd7/IwhikN7mn3KwLwd3HhuKH2ETVik1y2IaQSaggb/SaSPQriKAAbplCJEVMyqDJ9oihwFs1iywynHTFWUefj4AW9lbnQPE9viihxlfOdWqRRZpOiDaCyCoMK0ZmgIsulRm4oBMFWwMIR/4eCr/2SthkZR0JJ7XhLwfB6T8x52M340snXiszLxHL2+NXZgHfr+0PpXo7Jh95tiBhr+OenuQEBkLTzKkDnXxTnt3aQ01de2MbHT+bJ/zp+SLu6N4hA9/4O6z79H69HKf3+YOP/odEAAAAA= 2x"
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                src="/Landing_simply_chocolate/assets/2milk-desktop-1x-66a23249.png"
+                alt="milk"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">MILK</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">MILK</h3>
+            <p class="item-back__text">
+              Experience Milk of the Highest Caliber, Perfection in Every Sip!
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-dark">
-          <svg class="ingredients__item-icon-dark" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-3.png"
-          alt="nuts"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">NUTS</h3>
+
+      <!-- NUTS -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front black">
+            <picture>
+              <source
+                srcset="/Landing_simply_chocolate/assets/3nuts-desktop-1x-63680bf5.webp 1x, /Landing_simply_chocolate/assets/3nuts-desktop-2x-7a04464f.webp 2x"
+                media="( min-width: 1200px )"
+              />
+              <source
+                srcset="/Landing_simply_chocolate/assets/3nuts-desktop-1x-63680bf5.webp 1x, /Landing_simply_chocolate/assets/nuts3-mobile-tablet-2x-bd816b3b.webp 2x"
+                media="( max-width: 1199px )"
+              />
+              <img
+                class="front-img"
+                src="/Landing_simply_chocolate/assets/3nuts-desktop-1x-b7ecca5b.png"
+                alt="nuts"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">NUTS</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">NUTS</h3>
+            <p class="item-back__text">
+              Elevate Your Taste with Nuts of Supreme Quality, Pure Perfection
+              in Every Crunch!
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-milk">
-          <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-4.png"
-          alt="semi-sweet chocolate"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-black">SEMI-SWEET CHOCOLATE</h3>
+
+      <!-- SEMI-SWEET CHOCOLATE -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front">
+            <picture>
+              <source
+                srcset="/Landing_simply_chocolate/assets/4coffe-desktop-1x-cdbdfc69.webp 1x, /Landing_simply_chocolate/assets/4coffe-desktop-2x-854abd92.webp 2x"
+                media="( min-width: 1200px )"
+              />
+              <source
+                srcset="/Landing_simply_chocolate/assets/4coffe-desktop-1x-cdbdfc69.webp 1x, /Landing_simply_chocolate/assets/coffe4-mobile-tablet-2x-3ebd6f03.webp 2x"
+                media="( max-width: 1199px )"
+              />
+
+              <img
+                class="front-img"
+                src="/Landing_simply_chocolate/assets/4coffe-desktop-1x-4c665421.png"
+                alt="semi-sweet chocolate"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">SEMI - SWEET CHOCOLATE</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">SEMI - SWEET CHOCOLATE</h3>
+            <p class="item-back__text">
+              Savor the Magic in Every Bite: Our Semi-Sweet Chocolate,
+              Perfection Perfected.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button">
-          <svg class="ingredients__item-icon" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-5.png"
-          alt="semi-sweet chocolate"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">CACAO</h3>
+
+      <!-- CACAO -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front orange-bg">
+            <picture>
+              <source
+                srcset="/Landing_simply_chocolate/assets/cacao5-mobile-tablet-1x-92638c53.webp 1x, /Landing_simply_chocolate/assets/cacao5-mobile-tablet-2x-4d029e96.webp 2x"
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="/Landing_simply_chocolate/assets/5cacao-desktop-1x-fba699a0.webp 1x, /Landing_simply_chocolate/assets/5cacao-desktop-1x-fba699a0.webp 2x"
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                loading="lazy"
+                src="./img/ingridients/5cacao-desktop-1x.png"
+                alt="cacao"
+              />
+            </picture>
+            <h3 class="item-front__headline">CACAO</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">CACAO</h3>
+            <p class="item-back__text">
+              Unleash the Temptation of Excellence: Our Semi-Sweet Cacao,
+              Perfection in Every Morsel.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-milk">
-          <svg class="ingredients__item-icon-milk" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-6.png"
-          alt="raspberry"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-black">RASPBERRY</h3>
+
+      <!-- RASPBERRY -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front">
+            <picture>
+              <source
+                srcset="/Landing_simply_chocolate/assets/raspberry6-mobile-tablet-1x-0ba009fb.webp 1x, /Landing_simply_chocolate/assets/raspberry6-mobile-tablet-2x-d3a11ede.webp 2x"
+                media="( max-width: 1199px )"
+              />
+              <source
+                srcset="/Landing_simply_chocolate/assets/6raspberry-desktop-1x-5930f105.webp 1x, /Landing_simply_chocolate/assets/6raspberry-desktop-2x-8a7755a2.webp 2x"
+                media="( min-width: 1200px )"
+              />
+              <img
+                class="front-img"
+                src="/Landing_simply_chocolate/assets/6raspberry-desktop-1x-dbc613fa.png"
+                alt="raspberry"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">RASPBERRY</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">RASPBERRY</h3>
+            <p class="item-back__text">
+              Elevate Your Senses with Perfection in Every Bite: Sweet Raspberry
+              Bliss.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="ingredients__list-item link">
-        <button type="button" class="ingredients__item-button-dark">
-          <svg class="ingredients__item-icon-dark" width="8" height="8">
-            <use href="./img/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-        <img
-          src="./img/ingredients/img-7.png"
-          alt="raspberry"
-          width="214"
-          height="160"
-          class="ingredients__img"
-        />
-        <h3 class="ingredients__item-headline-white">COCONUT OIL</h3>
+
+      <!-- COCONUT OIL -->
+
+      <li class="ingredients__item">
+        <div class="ingredients__item-inner">
+          <div class="ingredients__item-front black">
+            <picture>
+              <source
+                srcset="/Landing_simply_chocolate/assets/7coconut-desktop-1x-7161f96b.webp 1x, /Landing_simply_chocolate/assets/7coconut-desktop-2x-9389d7b4.webp 2x"
+                media="( min-width: 1200px )"
+              />
+              <source
+                srcset="/Landing_simply_chocolate/assets/coconut7-mobile-tablet-1x-cf57b540.webp 1x, /Landing_simply_chocolate/assets/coconut7-mobile-tablet-2x-9b6ac683.webp 2x"
+                media="( max-width: 1199px )"
+              />
+              <img
+                class="front-img"
+                src="/Landing_simply_chocolate/assets/7coconut-desktop-1x-a356577d.png"
+                alt="coconut"
+                loading="lazy"
+              />
+            </picture>
+            <h3 class="item-front__headline">COCONUT</h3>
+          </div>
+          <div class="ingredients__item-back">
+            <h3 class="item-back__headline">COCONUT</h3>
+            <p class="item-back__text">
+              Indulge in Paradise: Our Coconut, Where Quality is a Tropical
+              Delight.
+            </p>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
 </section>
 
-      <section id="how-made" class="how-made-section">
+      <!-- <section id="how-made" class="how-made-section">
   <div class="container">
     <h2 class="section-headline">
       HOW IT'S <span class="section-headline__span">MADE</span>
