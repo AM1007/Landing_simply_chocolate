@@ -1,9 +1,7 @@
-# 🍫 Welcome to the Ultimate Chocolate Experience! 🍫
+# Welcome to the Ultimate Chocolate Experience!
 
 - Adaptive marking using 'mobile first' technology.
 - [Vite](https://vitejs.dev) template used.
-
-[Design-layuot](<https://www.figma.com/file/CXbLOX3U8BTPzk9RVl6OSJ/Simply-Chocolate-(Copy)?type=design&mode=design&t=Oy1SntzcCzQkCpwI-1>)
 
 ## Preparing for work
 

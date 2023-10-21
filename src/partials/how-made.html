@@ -1,76 +1,87 @@
-<section id="how-made" class="how-made-section">
+<section id="how-made" class="section">
   <div class="container">
-    <h2 class="section-headline">
-      HOW IT'S <span class="section-headline__span">MADE</span>
+    <h2 class="section-title title">
+      HOW IT'S <span class="title-accent">MADE</span>?
     </h2>
-    <div class="how-made__division-wrap">
-      <div class="how-made__division">
-        <picture>
-          <source
-            media="(min-width: 1168px)"
-            srcset="./img/how-made/image.jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./img/how-made/img-tablet.jpg"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="./img/how-made/img-mobile.jpg"
-          />
-          <img
-            class="how-made__img"
-            src="./img/how-made/img-desktop.jpg"
-            alt="chocolate"
-            width="auto"
-            height="auto"
-          />
-        </picture>
+    <div class="how-made__wrapper">
+      <div class="how-made__video-container">
+        <div class="how-made__video-division">
+          <iframe
+            src="https://www.youtube.com/embed/DISjdfkSjc8?feature=oembed"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="how-made__video-cover">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/how-made/video-mobile.webp    1x,
+                ./img/how-made/video-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width:768px) and (max-width: 1199px)"
+              srcset="
+                ./img/how-made/video-tablet.webp    1x,
+                ./img/how-made/video-tablet@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./img/how-made/video-desktop.webp    1x,
+                ./img/how-made/video-desktop@2x.webp 2x
+              "
+            />
+            <img
+              class="how-made__img"
+              src="./img/how-made/video-mobile.jpg"
+              alt="Pastry chef preparing chocolate cake"
+              width="600"
+              height="400"
+              loading="lazy"
+            />
+          </picture>
+          <button aria-label="button play video" class="play-btn">
+            <svg class="play-icon">
+              <use href="./img/sprite.svg#icon-play"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="how-made__division-text">
-        <h3 class="how-made__headline">
+
+      <div class="how-made__text-container">
+        <h3 class="how-made__title">
           Try out chocolates today and discover the perfect balance of flavor
         </h3>
-        <ul class="how-made__list list">
-          <li class="how-made__list-item link">
-            <svg class="how-made__icon" width="8" height="8">
-              <use href="./img/sprite.svg#icon-ellipse"></use>
-            </svg>
+        <ul class="how-made__list">
+          <li class="how-made__list-item">
             <p class="list-item__paragraph">
               Heat the milk in a saucepan without bringing it to a boil. Add
               sugar and cocoa powder.
             </p>
           </li>
-          <li class="how-made__list-item link">
-            <svg class="how-made__icon" width="8" height="8">
-              <use href="./img/sprite.svg#icon-ellipse"></use>
-            </svg>
+          <li class="how-made__list-item">
             <p class="list-item__paragraph">
               At the same time, prepare a water bath. Melt the butter on it.
             </p>
           </li>
-          <li class="how-made__list-item link">
-            <svg class="how-made__icon" width="8" height="8">
-              <use href="./img/sprite.svg#icon-ellipse"></use>
-            </svg>
+          <li class="how-made__list-item">
             <p class="list-item__paragraph">
               "Mix" the milk mixture and already liquid butter. Mix thoroughly
               with a silicone spatula so that the mass becomes uniform and
               silky. it.
             </p>
           </li>
-          <li class="how-made__list-item link">
-            <svg class="how-made__icon" width="8" height="8">
-              <use href="./img/sprite.svg#icon-ellipse"></use>
-            </svg>
+          <li class="how-made__list-item">
             <p class="list-item__paragraph">
               Heat the mixture over low heat, letting it barely boil. it.
             </p>
           </li>
-          <li class="how-made__list-item link">
-            <svg class="how-made__icon" width="8" height="8">
-              <use href="./img/sprite.svg#icon-ellipse"></use>
-            </svg>
+          <li class="how-made__list-item">
             <p class="list-item__paragraph">
               Pour the chocolate into special containers (can be replaced with
               ice molds). Allow to cool and harden.
