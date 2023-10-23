@@ -1,4 +1,4 @@
-var btn = $('#toTop');
+const btn = $('#toTop');
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {

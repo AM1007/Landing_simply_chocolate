@@ -10,7 +10,8 @@
 @import url('./partials/how-made.css');
 @import url('./partials/products.css');
 @import url('./partials/topsellers.css');
-/* @import url('./partials/review.css');
+@import url('./partials/review.css');
+@import url('./partials/subscribe.css');
 @import url('./partials/footer.css');
 
-@import url('./partials/modal.css'); */
+@import url('./partials/modal.css');

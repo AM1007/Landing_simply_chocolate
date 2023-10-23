@@ -1,0 +1,104 @@
+.subscribe {
+  width: 100%;
+  padding: 62px 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(/img/subscribe/mobile-subcribe-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/subscribe/mobile-subcribe-bg@2x.webp);
+  }
+}
+
+.subscribe-content {
+  max-width: 335px;
+  margin: 0 auto 24px;
+
+  text-align: center;
+  color: var(--white-color);
+}
+
+.subscribe-title {
+  max-width: 291px;
+  margin: 0 auto 24px;
+}
+
+.subscribe-btn {
+  display: block;
+  height: 41px;
+  padding: 12px 28px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding: 72px 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/subscribe/tablet-subcribe-bg.webp);
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(/img/subscribe/tablet-subcribe-bg@2x.webp);
+    }
+  }
+  .subscribe-content {
+    max-width: 467px;
+  }
+  .subscribe-title {
+    max-width: 378px;
+  }
+  .subscribe-btn {
+    height: 50px;
+    padding: 14px 40px;
+
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/subscribe//desktop-subcribe-bg.webp);
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(/img/subscribe/desktop-subcribe-bg@2x.webp);
+    }
+  }
+}

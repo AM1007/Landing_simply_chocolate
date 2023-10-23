@@ -56,7 +56,6 @@
 
 .products__item-img {
   margin-bottom: 8px;
-
   transition: transform var(--duration) var(--time-function);
 }
 
