@@ -1,0 +1,222 @@
+.modal-review {
+  width: 95%;
+  max-height: 550px;
+  padding: 32px 24px;
+
+  background: var(--primary-background-color);
+  border-radius: 15px;
+}
+
+.modal-review-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+
+  transition: background-color var(--duration) var(--time-function);
+}
+
+.modal-review-close:hover,
+.modal-review-close:focus {
+  background-color: var(--accent-color);
+}
+
+.modal__cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+
+  stroke: #000;
+
+  transition: stroke var(--duration) var(--time-function);
+}
+
+.modal-review-close:hover .modal__cross,
+.modal-review-close:focus .modal__cross {
+  stroke: var(--white-color);
+}
+
+.modal-review-title {
+  max-width: 245px;
+
+  text-align: left;
+}
+
+.modal-form-field {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 45px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+
+  border-radius: 8px;
+}
+
+.modal-form-input::placeholder,
+.modal-form-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.textarea-field {
+  margin-bottom: 18px;
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 91px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+
+  border-radius: 8px;
+  resize: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal-form-message::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-form-submit {
+  height: 41px;
+  padding: 12px 28px;
+
+  transition: border var(--duration) var(--time-function),
+    background-color var(--duration) var(--time-function),
+    color var(--duration) var(--time-function);
+}
+
+@media screen and (min-width: 375px) {
+  .modal-review {
+    width: 311px;
+    max-height: 471px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-review .title-decor {
+    letter-spacing: -0.07em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-review {
+    width: 517px;
+    max-height: 631px;
+    padding: 40px;
+  }
+  .modal-review-close {
+    top: 24px;
+    right: 24px;
+    width: 35px;
+    height: 35px;
+  }
+  .modal__cross {
+    width: 14px;
+    height: 14px;
+  }
+  .modal-review-title {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  .modal-form-field {
+    margin-bottom: 19px;
+  }
+  .modal-form-input {
+    height: 66px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    border-radius: 13px;
+  }
+
+  .modal-form-input::placeholder,
+  .modal-form-message::placeholder {
+    font-size: 18px;
+  }
+
+  .modal-form-message,
+  .modal-form-input,
+  .iti--separate-dial-code .iti__selected-dial-code {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .modal-form-message {
+    padding: 22px 24px;
+    height: 137px;
+
+    border-radius: 13px;
+  }
+
+  .modal-form-submit {
+    padding: 14px 40px;
+    height: 45px;
+  }
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  padding-left: 16px;
+  background-color: transparent;
+  position: relative;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .iti--separate-dial-code .iti__selected-flag {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.iti--separate-dial-code .iti__selected-flag::after {
+  content: '';
+  position: absolute;
+  left: 78px;
+  width: 32px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transform: rotate(90deg);
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type='text'],
+.iti--allow-dropdown input[type='tel'],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type='text'],
+.iti--separate-dial-code input[type='tel'] {
+  padding-left: 103px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .iti--separate-dial-code .iti__selected-flag::after {
+    left: 90px;
+  }
+  .iti--allow-dropdown input,
+  .iti--allow-dropdown input[type='text'],
+  .iti--allow-dropdown input[type='tel'],
+  .iti--separate-dial-code input,
+  .iti--separate-dial-code input[type='text'],
+  .iti--separate-dial-code input[type='tel'] {
+    padding-left: 118px !important;
+  }
+}

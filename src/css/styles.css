@@ -13,5 +13,8 @@
 @import url('./partials/review.css');
 @import url('./partials/subscribe.css');
 @import url('./partials/footer.css');
-
-@import url('./partials/modal.css');
+/* modals */
+@import url('./partials/modals/backdrop.css');
+@import url('./partials/modals/hero-modal.css');
+@import url('./partials/modals/review-modal.css');
+@import url('./partials/modals/subscribe-modal.css');

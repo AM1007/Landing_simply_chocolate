@@ -92,15 +92,33 @@
     border var(--duration) var(--time-function);
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 15px;
-  color: #c4c3c3;
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
 }
 
-.swiper-button-next:hover::after,
-.swiper-button-next:focus::after,
-.swiper-button-prev:hover::after,
-.swiper-button-prev:focus::after {
-  color: var(--accent-color);
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
+  height: 13px;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+
+  background: rgba(17, 17, 17, 0.1);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 20px;
+  background-color: var(--accent-color);
 }

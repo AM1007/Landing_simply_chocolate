@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 16px;
+  margin-bottom: 32px;
 }
 
 .sellers__list-item {
@@ -95,4 +96,41 @@
   color: var(--primary-color);
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.sellers-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+  min-width: 120px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+    min-width: 162px;
+    min-height: 50px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sellers-text {
+    max-width: 306px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers-text {
+    max-width: 407px;
+  }
 }

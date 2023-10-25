@@ -1,0 +1,223 @@
+<div class="modal hero-modal" data-modal="1">
+  <button class="hero-modal__close-btn">
+    <svg aria-label="close button" class="close-btn__icon js-modal-close">
+      <use href="./img/sprite.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <div class="hero-modal__wrap">
+    <h2 class="title hero-modal__title">
+      <span class="title-accent">buy</span> now
+    </h2>
+    <form id="hero-modal__form" class="hero-modal__form">
+      <ul class="hero-modal__list">
+        <li class="hero-modal__item">
+          <input
+            id="check1"
+            class="hero-modal-checkbox visually-hidden"
+            type="checkbox"
+            name="product"
+            value="chocolate-1"
+          />
+          <label for="check1" class="hero-modal__item-label">
+            <span class="hero-modal__img-wrap">
+              <picture>
+                <source
+                  srcset="
+                    ./img/hero-modal/chocolate-mobile-1.webp    1x,
+                    ./img/hero-modal/chocolate-mobile-1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/hero-modal/chocolate-tablet-1.webp    1x,
+                    ./img/hero-modal/chocolate-tablet-1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  loading="lazy"
+                  class="hero-modal__img"
+                  src="./img/hero-modal/chocolate-1.png"
+                  alt="Chocolate"
+                />
+              </picture>
+              <span class="hero-modal__weight">100 g</span>
+            </span>
+          </label>
+        </li>
+        <li class="hero-modal__item">
+          <input
+            id="check2"
+            class="hero-modal-checkbox visually-hidden"
+            type="checkbox"
+            name="product"
+            value="chocolate-2"
+          />
+          <label for="check2" class="hero-modal__item-label">
+            <span class="hero-modal__img-wrap">
+              <picture>
+                <source
+                  srcset="
+                    ./img/hero-modal/chocolate-mobile-2.webp    1x,
+                    ./img/hero-modal/chocolate-mobile-2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/hero-modal/chocolate-tablet-2.webp    1x,
+                    ./img/hero-modal/chocolate-tablet-2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  loading="lazy"
+                  class="hero-modal__img"
+                  src="./img/hero-modal/chocolate-2.png"
+                  alt="Chocolate"
+                />
+              </picture>
+              <span class="hero-modal__weight">200 g</span>
+            </span>
+          </label>
+        </li>
+        <li class="hero-modal__item">
+          <input
+            id="check3"
+            class="hero-modal-checkbox visually-hidden"
+            type="checkbox"
+            name="product"
+            value="chocolate-3"
+          />
+          <label for="check3" class="hero-modal__item-label">
+            <span class="hero-modal__img-wrap">
+              <picture>
+                <source
+                  srcset="
+                    ./img/hero-modal/chocolate-mobile-3.webp    1x,
+                    ./img/hero-modal/chocolate-mobile-3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/hero-modal/chocolate-tablet-3.webp    1x,
+                    ./img/hero-modal/chocolate-tablet-3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  loading="lazy"
+                  class="hero-modal__img"
+                  src="./img/hero-modal/chocolate-3.png"
+                  alt="Chocolate"
+                />
+              </picture>
+              <span class="hero-modal__weight">300 g</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+
+      <span class="hero-modal__form-name">Personal information</span>
+      <span class="hero-modal__form-wrap hero-modal__names">
+        <label class="hero-modal__form-label">
+          <input
+            class="hero-modal__form-input"
+            name="name"
+            placeholder="Name"
+            type="text"
+            required
+            minlength="2"
+          />
+        </label>
+        <label class="hero-modal__form-label">
+          <input
+            class="hero-modal__form-input"
+            name="surname"
+            placeholder="Surname"
+            type="text"
+            required
+            minlength="2"
+          />
+        </label>
+      </span>
+      <label class="hero-modal__form-label">
+        <span class="hero-modal__form-name">Email</span>
+        <input
+          class="hero-modal__form-input"
+          name="email"
+          placeholder="Enter your email"
+          type="email"
+          required
+        />
+      </label>
+      <label class="hero-modal__form-label">
+        <span class="hero-modal__form-name">Phone number</span>
+        <span class="hero-modal__label-box">
+          <input
+            class="hero-modal__form-input hero-modal__number-input"
+            name="num"
+            placeholder="Phone number"
+            id="phone1"
+            type="tel"
+            required
+            minlength="5"
+          />
+        </span>
+      </label>
+      <script>
+        var input = document.querySelector('#phone1');
+        window.intlTelInput(input, {
+          utilsScript:
+            'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
+          separateDialCode: true,
+          initialCountry: 'ua',
+          excludeCountries: ['ru'],
+          customPlaceholder: true,
+          onlyCountries: ['us', 'be', 'ch', 'ua'],
+        });
+      </script>
+      <label class="hero-modal__form-label">
+        <span class="hero-modal__form-name">Card number</span>
+        <span class="hero-modal__label-box">
+          <input
+            class="hero-modal__form-input"
+            name="card"
+            placeholder="Enter card"
+            type="text"
+            required
+            minlength="16"
+          />
+          <span class="hero-modal__label-decor hero-modal__decor-right">
+            <svg class="hero-modal__label-decor-icon" width="22" height="13">
+              <use href="./img/sprite.svg#card"></use>
+            </svg>
+          </span>
+        </span>
+      </label>
+      <label class="hero-modal__form-label">
+        <span class="hero-modal__form-name">Comment</span>
+        <textarea
+          class="hero-modal__form-textarea"
+          name="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button
+        id="hero-modal__form-btn"
+        type="submit"
+        class="hero-modal__form-btn prime-button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
