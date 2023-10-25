@@ -2,13 +2,34 @@
   <button
     type="button"
     aria-label="close button"
-    class="js-modal-close subscribe-modal-close"
+    class="subscribe-modal__close-btn js-modal-close"
   >
     <svg
       aria-label="close button"
-      class="subscribe-modal-close__icon js-modal-close"
+      class="subscribe-modal__close-img js-modal-close"
     >
       <use href="./img/sprite.svg#icon-cross"></use>
     </svg>
   </button>
+  <div class="subscribe-modal__background"></div>
+  <div class="subscribe-modal__content">
+    <h2 class="subscribe-modal__title title">
+      EXPLORE OUR <br />
+      <span class="title-accent">NEW CHOCOLATE</span> FIRST!
+    </h2>
+    <div class="subscribe-modal__form">
+      <label class="subscribe-modal__label">
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Enter your email"
+          class="subscribe-form-input"
+        />
+      </label>
+      <button type="submit" class="prime-btn subscribe-modal-btn">
+        Submit
+      </button>
+    </div>
+  </div>
 </div>

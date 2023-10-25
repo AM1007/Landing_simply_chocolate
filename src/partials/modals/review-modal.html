@@ -1,7 +1,77 @@
-<div class="modal modal-review" data-modal="2">
-  <button class="js-modal-close modal-review-close" aria-label="close button">
-    <svg class="modal__cross">
+<div class="modal review-modal" data-modal="2">
+  <button
+    class="js-modal-close review-modal__close-btn"
+    aria-label="close button"
+  >
+    <svg class="close-btn__img">
       <use href="./img/sprite.svg#icon-cross"></use>
     </svg>
   </button>
+  <h2 class="modal-review__title title">
+    LEAVE A REVIEW ABOUT<span class="title-accent"> OUR CHOCOLATE</span>
+  </h2>
+  <form class="review-modal__form">
+    <label class="review-modal__label">
+      <span class="review-modal__input-wrap">
+        <input
+          type="tel"
+          name="user_name"
+          class="review-modal__input"
+          required
+          pattern="[a-zA-Zа-яА-яіІїЇ]+"
+          minlength="2"
+          placeholder="Name"
+        />
+      </span>
+    </label>
+
+    <label class="review-modal__label">
+      <span class="review-modal__input-wrap">
+        <input
+          type="email"
+          name="user_email"
+          class="review-modal__input"
+          required
+          placeholder="Email"
+        />
+      </span>
+    </label>
+
+    <label class="review-modal__label">
+      <span class="review-modal__input-wrap">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="review-modal__input phone-input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone number"
+        />
+      </span>
+    </label>
+
+    <script>
+      var input = document.querySelector('#phone');
+      window.intlTelInput(input, {
+        separateDialCode: true,
+        initialCountry: 'ua',
+        excludeCountries: ['ru'],
+        customPlaceholder: true,
+        onlyCountries: ['us', 'be', 'ch', 'ua'],
+      });
+    </script>
+
+    <label class="review-modal__label review-modal__textarea">
+      <textarea
+        name="user-message"
+        class="review-modal__message"
+        placeholder="Text input"
+      ></textarea>
+    </label>
+    <button type="submit" class="prime-btn review-modal__form-submit">
+      Send
+    </button>
+  </form>
 </div>

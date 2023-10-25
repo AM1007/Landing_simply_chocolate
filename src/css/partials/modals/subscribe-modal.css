@@ -13,7 +13,7 @@
   z-index: 99;
 }
 
-.subscribe-modal-close {
+.subscribe-modal__close-btn {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -27,12 +27,12 @@
   transition: background-color var(--duration) var(--time-function);
 }
 
-.subscribe-modal-close:hover,
-.subscribe-modal-close:focus {
+.subscribe-modal__close-btn:hover,
+.subscribe-modal__close-btn:focus {
   background-color: var(--accent-color);
 }
 
-.subscribe-modal-close__icon {
+.subscribe-modal__close-img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,12 +45,12 @@
   transition: stroke var(--duration) var(--time-function);
 }
 
-.subscribe-modal-close:hover .subscribe-modal-close__icon,
-.subscribe-modal-close:focus .subscribe-modal-close__icon {
+.subscribe-modal__close-btn:hover .subscribe-modal__close-img,
+.subscribe-modal__close-btn:focus .subscribe-modal__close-img {
   stroke: #000;
 }
 
-.subscribe-modal-photo {
+.subscribe-modal__background {
   width: 100%;
   height: 156px;
   background-image: url(/img/subscribe/mobile-subcribe-modal-img.webp);
@@ -62,29 +62,30 @@
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe-modal-photo {
+  .subscribe-modal__background {
     background-image: url(/img/subscribe/mobile-subcribe-modal-img@2x.webp);
   }
 }
 
-.subscribe-modal-content {
+.subscribe-modal__content {
   padding: 32px 24px;
 }
 
-.subscribe-modal-title {
+.subscribe-modal__title {
   text-align: left;
 
   margin-bottom: 24px;
 }
 
-.subscribe-form-field {
+.subscribe-modal__form {
   position: relative;
 }
 
 .subscribe-form-input {
   width: 100%;
   height: 45px;
-  border-radius: 30px;
+  border-radius: 8px;
+  outline: none;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   padding-left: 18px;
   padding-right: 100px;
@@ -115,24 +116,24 @@
     width: 538px;
     height: 412px;
   }
-  .subscribe-modal-photo {
+  .subscribe-modal__background {
     height: 196px;
     background-image: url(/img/subscribe//desktop-subcribe-modal-img.webp);
   }
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .subscribe-modal-photo {
+    .subscribe-modal__background {
       background-image: url(/img/subscribe/desktop-subcribe-modal-img@2x.webp);
     }
   }
-  .subscribe-modal-content {
+  .subscribe-modal__content {
     padding: 40px;
   }
-  .subscribe-modal-title {
+  .subscribe-modal__title {
     margin-bottom: 28px;
   }
-  .subscribe-form-field {
+  .subscribe-modal__form {
     display: flex;
     gap: 8px;
   }
