@@ -19,8 +19,8 @@
       href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
     />
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-22097303.js"></script>
-    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-2c022c60.css">
+    <script type="module" crossorigin src="/Landing_simply_chocolate/assets/index-89cf211c.js"></script>
+    <link rel="stylesheet" href="/Landing_simply_chocolate/assets/index-5cf5fefe.css">
   </head>
 
   <body>
@@ -1285,27 +1285,118 @@
   </div>
 </div>
 
-<div class="modal modal-review" data-modal="2">
-  <button class="js-modal-close modal-review-close" aria-label="close button">
-    <svg class="modal__cross">
+<div class="modal review-modal" data-modal="2">
+  <button
+    class="js-modal-close review-modal__close-btn"
+    aria-label="close button"
+  >
+    <svg class="close-btn__img">
       <use href="/Landing_simply_chocolate/assets/sprite-f150d474.svg#icon-cross"></use>
     </svg>
   </button>
+  <h2 class="modal-review__title title">
+    LEAVE A REVIEW ABOUT<span class="title-accent"> OUR CHOCOLATE</span>
+  </h2>
+  <form class="review-modal__form">
+    <label class="review-modal__label">
+      <span class="review-modal__input-wrap">
+        <input
+          type="tel"
+          name="user_name"
+          class="review-modal__input"
+          required
+          pattern="[a-zA-Zа-яА-яіІїЇ]+"
+          minlength="2"
+          placeholder="Name"
+        />
+      </span>
+    </label>
+
+    <label class="review-modal__label">
+      <span class="review-modal__input-wrap">
+        <input
+          type="email"
+          name="user_email"
+          class="review-modal__input"
+          required
+          placeholder="Email"
+        />
+      </span>
+    </label>
+
+    <label class="review-modal__label">
+      <span class="review-modal__input-wrap">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="review-modal__input phone-input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone number"
+        />
+      </span>
+    </label>
+
+    <script>
+      var input = document.querySelector('#phone');
+      window.intlTelInput(input, {
+        separateDialCode: true,
+        initialCountry: 'ua',
+        excludeCountries: ['ru'],
+        customPlaceholder: true,
+        onlyCountries: ['us', 'be', 'ch', 'ua'],
+      });
+    </script>
+
+    <label class="review-modal__label review-modal__textarea">
+      <textarea
+        name="user-message"
+        class="review-modal__message"
+        placeholder="Text input"
+      ></textarea>
+    </label>
+    <button type="submit" class="prime-btn review-modal__form-submit">
+      Send
+    </button>
+  </form>
 </div>
 
 <div class="subscribe-modal modal" data-modal="3">
   <button
     type="button"
     aria-label="close button"
-    class="js-modal-close subscribe-modal-close"
+    class="subscribe-modal__close-btn js-modal-close"
   >
     <svg
       aria-label="close button"
-      class="subscribe-modal-close__icon js-modal-close"
+      class="subscribe-modal__close-img js-modal-close"
     >
       <use href="/Landing_simply_chocolate/assets/sprite-f150d474.svg#icon-cross"></use>
     </svg>
   </button>
+  <div class="subscribe-modal__background"></div>
+  <div class="subscribe-modal__content">
+    <h2 class="subscribe-modal__title title">
+      EXPLORE OUR <br />
+      <span class="title-accent">NEW CHOCOLATE</span> FIRST!
+    </h2>
+    <div class="subscribe-modal__form">
+      <label class="subscribe-modal__label">
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Enter your email"
+          class="subscribe-form-input"
+        />
+      </label>
+      <button type="submit" class="prime-btn subscribe-modal-btn">
+        Submit
+      </button>
+    </div>
+  </div>
 </div>
 
 <div class="backdrop js-backdrop-modal"></div>
