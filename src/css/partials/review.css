@@ -38,6 +38,22 @@
   background: var(--white-color);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
+  transition: border var(--duration) var(--time-function);
+}
+
+.review__list-item:hover,
+.review__list-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.review__list-item:hover .review__item-title,
+.review__list-item:focus .review__item-title {
+  color: var(--accent-color);
+}
+
+.review__list-item:hover .review__item-img,
+.review__list-item:hover .review__item-img {
+  border: 1px solid var(--accent-color);
 }
 
 @media screen and (min-width: 375px) {
@@ -64,6 +80,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
+  transition: border var(--duration) var(--time-function);
 }
 
 .review__item-title {
@@ -72,6 +89,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  transition: color var(--duration) var(--time-function);
 }
 
 .review__item-paragraph {
