@@ -1,11 +1,11 @@
 {
-  "name": "vite-template",
+  "name": "simply_chocolate",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Landing_simply_chocolate/",
+    "build": "vite build --base=/SimplyChocolate_landing_page/",
     "preview": "vite preview"
   },
   "devDependencies": {
